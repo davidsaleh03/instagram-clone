@@ -1,0 +1,13 @@
+body {
+  background: radial-gradient(
+    circle at center,
+    #1a1c22 0%,
+    #12141a 45%,
+    #0f1115 70%,
+    #0b0d10 100%
+  );
+}
+
+.faBars {
+    color: white;
+}
