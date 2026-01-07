@@ -1,0 +1,92 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+input {
+    width: 250px;
+    border: 1px solid rgb(177, 177, 177);
+    background-color: grey;
+    border-radius: 4px;
+    padding: 10px 8px;
+    margin-bottom: 8px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+button {
+    width: 250px;
+    border-radius: 6px;
+    padding: 6px 8px;
+    border: none;
+    background: linear-gradient(90deg, #4F5BFF 0%, #6A5CFF 100%);
+    color: white;
+}
+
+.more__text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 24px 0 32px 0;
+    font-size: 14px;
+    opacity: 0.8;
+    color: white;
+}
+
+.more__text::before,
+.more__text::after {
+    content: "";
+    /* height: 1px; */
+    width: 100px;
+    border-bottom: 0.05px solid white;
+    margin: 0 14px;
+    opacity: 0.5;
+}
+
+.other__options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    cursor: not-allowed;
+}
+
+.facebook__text {
+    font-size: 14px;
+    color: #257cee;
+}
+
+.facebook-icon {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #257cee;
+}
+
+.forgot {
+    margin-bottom: 72px;
+}
+
+.text__2 {
+    margin-bottom: 48px;
+}
+
+.forgot,
+.create__option {
+    color: white;
+    font-size: 14px;
+}
+
+.forgot,
+.facebook__text,
+.create__option {
+    font-weight: 600;
+}
+
+.signup__btn {
+   color: #4F5BFF;
+   cursor: pointer;
+}

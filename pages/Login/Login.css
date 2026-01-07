@@ -11,3 +11,55 @@ body {
 .faBars {
     color: white;
 }
+
+* {
+    /* color: white; */
+}
+
+.login__container {
+    /* width: 100%; */
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo__img {
+    filter: invert(1);
+}
+
+.login__style {
+    width: 517.13px;
+    height: 450px;
+    margin-right: 150px;
+}
+
+.login__img {
+    width: 100%;
+}
+
+.logo__wrapper {
+    width: 175px;
+    height: 51px;
+}
+
+.logo__img {
+    width: 100%;
+}
+
+.right__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    position: relative;
+}
+
+.footer-1 {
+    position: absolute;
+    bottom: 10px;
+}
+
