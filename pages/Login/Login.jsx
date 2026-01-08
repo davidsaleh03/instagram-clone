@@ -8,7 +8,9 @@ import SignIn from "../../components/SignIn";
 import Footer from "../../components/Footer";
 
 const Login = () => {
+
   return (
+    <div className='login-page'>
     <div className="login">
       <div className="login__container">
         <div className="login__style">
@@ -18,6 +20,7 @@ const Login = () => {
           <SignIn />
         </div>
       </div>
+    </div>
       <Footer className="footer-1"/>
     </div>
   );

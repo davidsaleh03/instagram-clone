@@ -2,25 +2,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    flex: 1;
+    margin-top: 75px;
 }
 .footer__list {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 12px;
 }
 
-.footer__list:not(:last-child) {
-    margin-right: 6px;
+.footer__link:not(:last-child) {
+    margin-right: 16px;
 }
 
 .footer__link {
-    font-size: 8px;
+    font-size: 12px;
     cursor: not-allowed;
     transition: all 300ms ease;
     color: grey;
+    list-style-type: none
 }
 
 .footer__link:hover {
     text-decoration: underline;
+}
+
+.copyright__section h2 {
+    font-size: 12px;
+    color: grey;
 }

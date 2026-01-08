@@ -1,14 +1,29 @@
 
-import './SignInUp.css'
+import './SignIn.css'
 
 import React, { useState } from 'react'
 import leftImg from "../assets/login-img.png";
 import logoImg from "../assets/instagram-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { login, signup } from '../firebase';
 
 const SignIn = () => {
   const [log, setLog] = useState(false);
+  const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const user_auth = async (event) => {
+    event.preventDefault();
+    {
+      log ? 
+      await signup(name, username, email, password)
+      :
+      await login(email, password)
+    }
+  }
   
  function logState() {
   setLog((prevLog) => !prevLog)
@@ -23,11 +38,11 @@ const SignIn = () => {
           <img src={logoImg} alt="" className="logo__img" />
         </div>
         <form>
-          <input type="name" placeholder="Name" required/>
-          <input type="username" placeholder="Username" required/>
-          <input type="email" placeholder="Email" required/>
-          <input type="password" placeholder="Password" required/>
-          <button>Sign Up</button>
+          <input value={name} type="name" placeholder="Name" onChange={(event) => {setName(event.target.value)}} required/>
+          <input value={username} type="username" placeholder="Username" onChange={(event) => {setUsername(event.target.value)}} required/>
+          <input value={email} type="email" placeholder="Email" onChange={(event) => {setEmail(event.target.value)}} required/>
+          <input value={password} type="password" placeholder="Password" onChange={(event) => {setPassword(event.target.value)}} required/>
+          <button onClick={user_auth}>Sign Up</button>
         </form>
         <div className="more__text">OR</div>
         <div className="other__options text__2">
@@ -44,9 +59,9 @@ const SignIn = () => {
           <img src={logoImg} alt="" className="logo__img" />
         </div>
         <form>
-          <input type="email" placeholder="Email" required/>
-          <input type="password" placeholder="Password" required/>
-          <button>Log In</button>
+          <input value={email} type="email" placeholder="Email" onChange={(event) => {setEmail(event.target.value)}} required/>
+          <input value={password} type="password" placeholder="Password" onChange={(event) => {setPassword(event.target.value)}} required/>
+          <button onClick={user_auth}>Log In</button>
         </form>
         <div className="more__text">OR</div>
         <div className="other__options">

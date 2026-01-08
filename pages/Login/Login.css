@@ -54,12 +54,14 @@ body {
     justify-content: center;
 }
 
-.login {
-    position: relative;
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-1 {
-    position: absolute;
-    bottom: 10px;
+.login {
+    flex: 1;
 }
+
 

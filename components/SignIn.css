@@ -25,6 +25,7 @@ button {
     border: none;
     background: linear-gradient(90deg, #4F5BFF 0%, #6A5CFF 100%);
     color: white;
+    cursor: pointer;
 }
 
 .more__text {
@@ -68,6 +69,7 @@ button {
 
 .forgot {
     margin-bottom: 72px;
+    cursor: not-allowed;
 }
 
 .text__2 {
