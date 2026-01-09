@@ -8,3 +8,28 @@ font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+
+.App {
+  display: flex;
+  background: radial-gradient(
+    circle at center,
+    #1a1c22 0%,
+    #12141a 45%,
+    #0f1115 70%,
+    #0b0d10 100%
+  );
+}
+
+body {
+  height: 100%;
+  /* overflow: hidden;  */
+  background-color: black;
+}
+
+.sidebar-index{
+  z-index: 2;
+}
+
+.home-index {
+  z-index: 1;
+}

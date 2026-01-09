@@ -5,6 +5,7 @@ import profile from "../assets/profile.png"
 import './Sidebar.css'
 import logoSmall from "../assets/instaicon.png"
 import React from 'react'
+import { logout } from '../firebase';
 
 function Sidebar() {
   return (
@@ -57,7 +58,7 @@ function Sidebar() {
                 <h1>More</h1> 
             </li>
             <li className="bottom__link">
-                <FontAwesomeIcon icon={faCircleHalfStroke} className="side__icon" />
+                <FontAwesomeIcon icon={faCircleHalfStroke} onClick={logout}className="side__icon" />
                 <h1>Display</h1> 
             </li>
         </ul>

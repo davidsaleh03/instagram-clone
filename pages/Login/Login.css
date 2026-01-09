@@ -1,12 +1,4 @@
-body {
-  background: radial-gradient(
-    circle at center,
-    #1a1c22 0%,
-    #12141a 45%,
-    #0f1115 70%,
-    #0b0d10 100%
-  );
-}
+
 
 .faBars {
     color: white;
@@ -58,10 +50,29 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 
 .login {
     flex: 1;
+    
+}
+
+.login-page {
+    background: radial-gradient(
+  circle at center,
+  #1c1c1e 0%,      
+  #17171a 40%,  
+  #121214 70%,    
+  #0d0d0f 100%   
+);
+
+}
+
+@media (max-width: 945px) {
+    .login__style {
+        display: none;
+    }
 }
 
 
