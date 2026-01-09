@@ -24,7 +24,7 @@
     transition: all 300ms ease;
     color: grey;
     list-style-type: none;
-    margin-bottom: 22px;
+    margin-bottom: 16px;
 }
 
 .footer__link:hover {
