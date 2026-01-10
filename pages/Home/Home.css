@@ -10,21 +10,214 @@
 }
 
 .home-middle {
-    width: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__reccomended {
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .home-right {
-    width: 30%;
+    width: 319px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.home__account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin-bottom: 24px;
 }
 
 .reccomended__post {
     display: flex;
-    margin-left: 200px;
-    margin-top: 100px;
 }
+
+.pic__name--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.users-name-one h1 {
+    font-size: 16px;
+}
+
+.users-name-one h1:nth-child(2) {
+    font-weight: lighter;
+    font-size: 14px !important;
+}
+
+.profile__figure--sugg {
+    width: 44px;
+    height: 44px;
+    margin-right: 8px;
+}
+
+.profile__img--sugg {
+    width: 100%;
+}
+
+.suggested__accounts {
+    margin-bottom: 22px;
+}
+
+.home__suggested {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin-bottom: 22px;
+}
+
+.home__suggested h1 {
+    font-size: 14px;
+}
+
+.home__logout,
+.follow__btn {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(133, 161, 255, 1);
+}
+
+.home__suggested h1:nth-child(1) {
+    color: lightslategrey;
+    font-weight: 400;
+}
+
+.sugg--left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin-bottom: 16px;
+}
+
+.side__footer {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .footer {
+    margin: 0px;
+    align-items: unset;
+}
+
+.home .footer__list {
+    justify-content: unset;
+}
+
+.home .footer__link {
+    margin-bottom: 8px;
+}
+
+.home-middle .footer {
+    display: none;
+}
+
+.home__story--one {
+    width: 140px;
+    height: 200px;
+}
+
+.home__stories {
+    width: 450px;
+}
+
+.stories__username {
+    font-size: 12px;
+}
+
+.username__descr {
+    font-size: 12px;
+}
+
+.stories__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stories__top h1 {
+    font-size: 16px;
+}
+
+.profile__story {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 8px;
+}
+
+.profile__story--img {
+    width: 100%;
+}
+
+.home__story--one {
+    border: 0.5px solid rgba(211, 211, 211, 0.329);
+    border-radius: 4px;
+}
+
+.stories__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+.top--section {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 0;
+    border-top: 0.5px solid rgba(211, 211, 211, 0.329);
+}
+
+.bottom__section h1 {
+    font-size: 12px;
+    color: rgba(133, 161, 255, 1);
+}
+
 
 @media (max-width: 1024px) {
     .home{
         margin-left: 98px;
+    }
+}
+
+@media (max-width: 1159px) {
+    .home-right {
+        display: none;
+    }
+
+    .home-middle .footer {
+    display: block;
+}
+
+    .home-middle {
+        width: 100%;
     }
 }
