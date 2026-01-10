@@ -1,11 +1,17 @@
 import postimg1 from './images-11.jpg'
+import profile1 from './daily_nutrition.jpg'
+import profile2 from './daily_inspiration.jpg'
+import profile3 from './daily_foodie.jpg'
+import profile4 from './study.smart.jpg'
+import profile5 from './wander.daily.jpg'
+import profile6 from './code.daily.jpg'
 
 const homeuser = {
     posts:[
          {
       id: 101,
       username: "daily_nutrition",
-      image: {postimg1},
+      image: profile1,
       caption: "Fuel your body with real food 🌱",
       likes: 1203,
       createdAt: "2025-12-01",
@@ -85,7 +91,7 @@ const homeuser = {
     {
       id: 201,
       username: 'daily_inspiration',
-      image: {postimg1},
+      image: profile2,
       caption: "Every day is a new chance 🌅",
       likes: 2140,
       createdAt: "2025-12-01",
@@ -166,7 +172,7 @@ const homeuser = {
       id: 301,
       userId: 3,
       username: "daily_foodie",
-      image: {postimg1},
+      image: profile3,
       caption: "Good food = good mood 😋",
       likes: 2840,
       createdAt: "2025-12-01",
@@ -247,7 +253,7 @@ const homeuser = {
       id: 307,
       userId: 3,
       username: "study.smart",
-      image: {postimg1},
+      image: profile4,
       caption: "Pizza makes everything better 🍕",
       likes: 4025,
       createdAt: "2025-12-07",
@@ -328,7 +334,7 @@ const homeuser = {
       id: 401,
       userId: 4,
       username: "wander.daily",
-      image: {postimg1},
+      image: profile5,
       caption: "Consistency beats cramming 📖",
       likes: 1785,
       createdAt: "2025-12-01",
@@ -408,7 +414,8 @@ const homeuser = {
     {
       id: 501,
       userId: 5,
-      image: {postimg1},
+      username: "code.daily",
+      image: profile6,
       caption: "Collect moments, not miles 🌄",
       likes: 3250,
       createdAt: "2025-12-01",

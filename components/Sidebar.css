@@ -19,6 +19,10 @@
   );
 }
 
+.no-cursor {
+    cursor: not-allowed;
+}
+
 .img__logo,
 .img__logo--small {
   display: flex;

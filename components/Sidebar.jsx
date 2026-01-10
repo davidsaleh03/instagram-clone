@@ -6,6 +6,7 @@ import './Sidebar.css'
 import logoSmall from "../assets/instaicon.png"
 import React from 'react'
 import { logout } from '../firebase';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   return (
@@ -17,40 +18,50 @@ function Sidebar() {
             <img src={logoSmall} alt="" className="insta__logo--small" />
         </figure>
         <ul className="side__links">
+            <Link to='/'>
             <li className="side__link">
                 <FontAwesomeIcon icon={faHouse} className="side__icon" />
                 <h1>Home</h1>
             </li>
-            <li className="side__link">
+            </Link>
+            <li className="side__link no-cursor">
                 <FontAwesomeIcon icon={faMagnifyingGlass} className="side__icon" />
                 <h1>Search</h1>
             </li>
+            <Link to='/explore'>
             <li className="side__link">
                 <FontAwesomeIcon icon={faCompass} className="side__icon" />
                 <h1>Explore</h1>
             </li>
+            </Link>
+            <Link to='/reels'>
             <li className="side__link">
                 <FontAwesomeIcon icon={faCirclePlay} className="side__icon" />
                 <h1>Reels</h1>
             </li>
+            </Link>
+            <Link to='/messages'>
             <li className="side__link">
                 <FontAwesomeIcon icon={faPaperPlane} className="side__icon" />
                 <h1>Messages</h1>
             </li>
+            </Link>
             <li className="side__link">
                 <FontAwesomeIcon icon={faHeart} className="side__icon" />
                 <h1>Notifications</h1>
             </li>
-            <li className="side__link">
+            <li className="side__link no-cursor" >
                 <FontAwesomeIcon icon={faPlus} className="side__icon" />
                 <h1>Create</h1>
             </li>
+            <Link to='/profile'>
             <li className="side__link link-1">
                 <figure className="profile__pic">
                     <img src={profile} alt="" className="profile__img" />
                 </figure>
                 <h1>Profile</h1>
             </li>
+            </Link>
         </ul>
         <ul className="side__bottom">
             <li className="bottom__link">

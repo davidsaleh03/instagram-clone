@@ -60,6 +60,9 @@
 }
 
 .profile__figure--sugg {
+    border-radius: 50%;
+    border: 0.7px solid rgb(56, 56, 56);
+    overflow: hidden;
     width: 44px;
     height: 44px;
     margin-right: 8px;
@@ -130,45 +133,66 @@
 }
 
 .home__story--one {
-    width: 140px;
-    height: 200px;
+    width: 450px;
+    height: 220px;
+    margin-right: 14px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
 }
 
 .home__stories {
     width: 450px;
+    margin: 40px 0;
 }
 
 .stories__username {
-    font-size: 12px;
+    font-size: 14px;
+    margin-bottom: 8px;
 }
 
 .username__descr {
     font-size: 12px;
+    font-weight: 400;
 }
 
 .stories__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 24px;
 }
 
 .stories__top h1 {
     font-size: 16px;
 }
 
+.stories__top h1:nth-child(2) {
+    color: rgba(133, 161, 255, 1);
+}
+
+
+
 .profile__story {
     width: 56px;
     height: 56px;
+    border-radius: 50%;
+    border: 0.7px solid rgb(56, 56, 56);
+    overflow: hidden;
     margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile__story--img {
     width: 100%;
 }
 
-.home__story--one {
-    border: 0.5px solid rgba(211, 211, 211, 0.329);
-    border-radius: 4px;
+.home__story--one::-webkit-scrollbar {
+    display: none;
 }
 
 .stories__bottom {
@@ -176,7 +200,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 200px;
+    flex: 0 0 150px;
+    height: 220px;
+    border: 0.5px solid rgba(211, 211, 211, 0.329);
+    border-radius: 4px;
+    margin-right: 12px;
 }
 
 .top--section {
@@ -197,7 +225,7 @@
 }
 
 .bottom__section h1 {
-    font-size: 12px;
+    font-size: 14px;
     color: rgba(133, 161, 255, 1);
 }
 

@@ -4,7 +4,12 @@ import postimg3 from './images-13.jpg'
 import postimg4 from './images-14.jpg'
 import postimg5 from './images-15.jpg'
 import postimg6 from './images-16.jpg'
-import profile1 from './profile-pic.png'
+import profile1 from './daily_nutrition.jpg'
+import profile2 from './daily_inspiration.jpg'
+import profile3 from './daily_foodie.jpg'
+import profile4 from './study.smart.jpg'
+import profile5 from './wander.daily.jpg'
+import profile6 from './code.daily.jpg'
 
 const user1 = {
   users: [

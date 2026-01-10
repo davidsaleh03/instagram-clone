@@ -1,0 +1,33 @@
+.reels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 262px;
+}
+
+.reel {
+    margin: 20px 0;
+}
+
+.reel__figure {
+    width: 394px;
+    height: 700px;
+}
+.reel__figure video {
+    width: 100%;
+}
+
+.reels__content {
+    margin: 24px 0;
+}
+
+.reels__content h2 {
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .reels {
+        margin-left: 98px;
+    }
+}

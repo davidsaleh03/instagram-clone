@@ -1,0 +1,6 @@
+import profile1 from './daily_nutrition.jpg'
+import profile2 from './daily_inspiration.jpg'
+import profile3 from './daily_foodie.jpg'
+import profile4 from './study.smart.jpg'
+import profile5 from './wander.daily.jpg'
+import profile6 from './code.daily.jpg'
