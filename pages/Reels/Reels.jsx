@@ -61,7 +61,7 @@ const Reels = () => {
                 <FontAwesomeIcon className="reel__icon" icon={faHeart} />
                 <h1>14</h1>
                 <FontAwesomeIcon className="reel__icon" icon={faComment} />
-                <h1>14</h1>
+                <h1>5</h1>
                 <FontAwesomeIcon className="reel__icon" icon={faPaperPlane} />
                 <FontAwesomeIcon className="reel__icon" icon={faBookmark} />
                 </div>
@@ -78,7 +78,7 @@ const Reels = () => {
                 <h1>Comments</h1>
                 </div>
                 <div className="reels__comarea">
-                <ReelsComments className='reels-comments'/>
+                <ReelsComments comments={reel.comments} className='reels-comments'/>
                 </div>
               </div>
             </div>

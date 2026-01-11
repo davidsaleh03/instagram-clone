@@ -1,0 +1,29 @@
+.comment__profile {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+
+.comment__img {
+    width: 100%;
+}
+
+.comments__actual {
+    display: flex;
+}
+
+.comment,
+.comment__top {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.comment__top h1 {
+    font-size: 14px;
+}
+
+.comment__content {
+    font-weight: 400;
+    margin-bottom: 8px;
+}
