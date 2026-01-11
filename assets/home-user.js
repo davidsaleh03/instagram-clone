@@ -5,6 +5,12 @@ import profile3 from './daily_foodie.jpg'
 import profile4 from './study.smart.jpg'
 import profile5 from './wander.daily.jpg'
 import profile6 from './code.daily.jpg'
+import reels1 from './daily.nutrition.mp4'
+import reels2 from './daily.inspiration.mp4'
+import reels3 from './daily.foodie.mp4'
+import reels4 from './study.smart.mp4'
+import reels5 from './wander.daily.mp4'
+import reels6 from './code.daily.mp4'
 
 const homeuser = {
     posts:[
@@ -492,6 +498,116 @@ const homeuser = {
         },
       ]
     }
+    ],
+    reels: [
+      {
+        username: 'daily_nutrition',
+        reel: reels1,
+        image: profile1,
+        caption: 'Fuel your body.',
+        comments: [
+      { id: 1, username: 'fit_vibes', text: 'So informative 💪' },
+      { id: 2, username: 'healthy_habits', text: 'Love this energy 🌱' },
+      { id: 3, username: 'clean_eats', text: 'Saved this 🙌' },
+      { id: 4, username: 'wellness_daily', text: 'Such a good reminder' },
+      { id: 5, username: 'plant_power', text: 'Nutrition is everything!' },
+      { id: 6, username: 'strong_living', text: '🔥🔥🔥' },
+      { id: 7, username: 'mind_body', text: 'Needed this today' },
+      { id: 8, username: 'health_first', text: 'So true 👏' },
+      { id: 9, username: 'fit_focus', text: 'Amazing tips' },
+      { id: 10, username: 'fuel_right', text: 'Keep posting these!' },
+    ],
+      },
+      {
+        username: 'daily_inspiration',
+        reel: reels2,
+        image: profile2,
+        caption: 'Keep going. 🌱',
+         comments: [
+      { id: 11, username: 'dream_chaser', text: 'This hit hard 💭' },
+      { id: 12, username: 'rise_daily', text: 'Motivation unlocked 🔓' },
+      { id: 13, username: 'positive_mind', text: 'So uplifting ✨' },
+      { id: 14, username: 'focus_forward', text: 'Exactly what I needed' },
+      { id: 15, username: 'self_growth', text: 'Never giving up 💪' },
+      { id: 16, username: 'inner_peace', text: 'Beautiful message' },
+      { id: 17, username: 'goal_getter', text: 'Let’s gooo 🚀' },
+      { id: 18, username: 'daily_push', text: 'Consistency wins' },
+      { id: 19, username: 'life_quotes', text: 'Powerful words' },
+      { id: 20, username: 'hope_fuel', text: 'Keep inspiring ❤️' },
+    ],
+      },
+      {
+        username: 'daily_foodie',
+        reel: reels3,
+        image: profile3,
+        caption: 'Made fresh. 🍽️',
+        comments: [
+      { id: 21, username: 'food_lover', text: 'That looks delicious 🤤' },
+      { id: 22, username: 'tasty_bites', text: 'Now I’m hungry 😅' },
+      { id: 23, username: 'chef_mode', text: 'Perfectly done 👌' },
+      { id: 24, username: 'yum_daily', text: 'Food goals 😍' },
+      { id: 25, username: 'home_cook', text: 'Recipe please!' },
+      { id: 26, username: 'snack_attack', text: 'Would eat this anytime' },
+      { id: 27, username: 'food_cravings', text: 'Looks so fresh' },
+      { id: 28, username: 'eat_repeat', text: '🔥🔥🔥' },
+      { id: 29, username: 'plate_magic', text: 'Love the presentation' },
+      { id: 30, username: 'flavor_hunt', text: 'So satisfying' },
+    ],
+      },
+      {
+        username: 'study.smart',
+        reel: reels4,
+        image: profile4,
+        caption: 'Focus. Learn. Repeat.',
+        comments: [
+      { id: 31, username: 'study_mode', text: 'Productivity vibes 📚' },
+      { id: 32, username: 'exam_ready', text: 'Needed this motivation' },
+      { id: 33, username: 'learn_daily', text: 'Discipline > motivation' },
+      { id: 34, username: 'note_master', text: 'Clean setup 👌' },
+      { id: 35, username: 'focus_time', text: 'Let’s grind 💻' },
+      { id: 36, username: 'student_life', text: 'So relatable' },
+      { id: 37, username: 'brain_power', text: 'Study goals 🔥' },
+      { id: 38, username: 'smart_steps', text: 'Consistency matters' },
+      { id: 39, username: 'deep_work', text: 'Locked in 🔒' },
+      { id: 40, username: 'daily_revision', text: 'Inspired 💯' },
+    ],
+      },
+      {
+        username: 'wander.daily',
+        reel: reels5,
+        image: profile5,
+        caption: 'Lost in the moment.',
+        comments: [
+      { id: 41, username: 'travel_bug', text: 'Take me there 🌍' },
+      { id: 42, username: 'roam_free', text: 'Absolutely stunning 😍' },
+      { id: 43, username: 'trip_vibes', text: 'Dream destination' },
+      { id: 44, username: 'nature_seek', text: 'So peaceful' },
+      { id: 45, username: 'travel_more', text: 'Bucket list ✔️' },
+      { id: 46, username: 'explore_now', text: 'Love this view' },
+      { id: 47, username: 'pathfinder', text: 'Adventure time!' },
+      { id: 48, username: 'sunset_chaser', text: 'Beautiful moment ✨' },
+      { id: 49, username: 'journey_on', text: 'Pure magic' },
+      { id: 50, username: 'escape_daily', text: 'So calming' },
+    ],
+      },
+      {
+        username: 'code.daily',
+        reel: reels6,
+        image: profile6,
+        caption: 'One line at a time. 💻',
+        comments: [
+      { id: 51, username: 'dev_life', text: 'Coding grind 💻🔥' },
+      { id: 52, username: 'bug_hunter', text: 'This is so relatable 😂' },
+      { id: 53, username: 'js_master', text: 'Clean workflow' },
+      { id: 54, username: 'frontend_fun', text: 'Love the setup' },
+      { id: 55, username: 'code_repeat', text: 'One bug at a time' },
+      { id: 56, username: 'logic_build', text: 'Consistency matters' },
+      { id: 57, username: 'tech_daily', text: 'Developer vibes 😎' },
+      { id: 58, username: 'commit_push', text: 'Ship it 🚀' },
+      { id: 59, username: 'stack_builder', text: 'Motivating!' },
+      { id: 60, username: 'night_coder', text: 'Late night coding hits different' },
+    ],
+      }
     ]
 }
 
