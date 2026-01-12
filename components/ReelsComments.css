@@ -8,6 +8,10 @@
     width: 100%;
 }
 
+.comment {
+    width: 175px;
+}
+
 .comments__actual {
     display: flex;
 }
@@ -19,6 +23,10 @@
     align-items: start;
 }
 
+.comment__icon {
+    /* margin-left: 24px; */
+}
+
 .comment__top h1 {
     font-size: 14px;
 }
@@ -26,4 +34,21 @@
 .comment__content {
     font-weight: 400;
     margin-bottom: 8px;
+}
+
+.margin-left--span {
+    margin-left: 8px;
+    font-weight: lighter;
+}
+
+.comment__bottom h1 {
+    font-size: 14px;
+}
+
+.comment__top {
+    margin-bottom: 8px;
+}
+
+.comments__actual {
+    margin-bottom: 24px;
 }

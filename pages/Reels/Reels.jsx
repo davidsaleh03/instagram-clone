@@ -8,11 +8,13 @@ import {
   faComment,
   faPaperPlane,
   faBookmark,
+  faFaceGrinBeam
 } from "@fortawesome/free-regular-svg-icons";
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import {faEllipsis} from '@fortawesome/free-solid-svg-icons'
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
 import ReelsComments from "../../components/ReelsComments";
+import profileImg from "../../assets/profile.png";
 
 const Reels = () => {
   return (
@@ -73,12 +75,19 @@ const Reels = () => {
                 </>
               </div>
               <div className="reel__comments">
-                <div className="comment__top">
+                <div className="comments__top">
                 <FontAwesomeIcon className="comment__icon" icon={faXmark} />
                 <h1>Comments</h1>
                 </div>
                 <div className="reels__comarea">
                 <ReelsComments comments={reel.comments} className='reels-comments'/>
+                </div>
+                <div className="comment__bottom--one">
+                    <figure className="add__profile">
+                        <img src={profileImg} alt="" className="add__img" />
+                    </figure>
+                    <h1>Add a comment...</h1>
+                    <FontAwesomeIcon icon={faFaceGrinBeam} />
                 </div>
               </div>
             </div>

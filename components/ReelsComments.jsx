@@ -23,11 +23,11 @@ const ReelsComments = ({ comments }) => {
                 <h1>{comment.username}</h1>
                 <h1 className="comment__content">{comment.text}</h1>
                 <h1>
-                  30 likes<span>reply</span>
+                  30 likes<span className="margin-left--span">reply</span>
                 </h1>
               </div>
               <div className="comment__bottom">
-                <h1>View all comments</h1>
+                <h1>View all replies</h1>
               </div>
             </div>
             <FontAwesomeIcon className="comment__icon" icon={faHeart} />
