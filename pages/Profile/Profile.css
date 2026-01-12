@@ -11,7 +11,10 @@
 
 .profile__page--icon {
     font-size: 24px;
-    color: white;
+    color: grey !important;
+    position: relative;
+    opacity: 70%;
+    cursor: pointer;
 }
 
 .profile__top--figure {
@@ -29,6 +32,37 @@
 
 .profile__top--img {
     width: 100%;
+}
+
+.profile__page--icon::after {
+    transition: all 300ms ease;
+}
+
+.icon__wrapper {
+  display: inline-block;
+  position: relative;
+  margin-right: 50px; 
+  cursor: pointer;
+}
+
+.icon__wrapper.active .profile__page--icon {
+    opacity: 100%;
+}
+
+.icon__wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; 
+  left: -6px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease;
+  z-index: 200;
+  transition: all 0.3s ease;
+}
+.icon__wrapper.active::after {
+  width: 140%; 
 }
 
 /* .profile__top--right */
@@ -87,6 +121,12 @@
     position: relative;
 }
 
+.profile__page--icons {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+
 .profile__page--content:after {
     content: "";
     position: absolute;
@@ -100,6 +140,7 @@
 .profile__page--icon:not(:last-child) {
 margin-right: 150px;
 }
+
 
 @media (max-width: 1024px) {
     .profile__page{

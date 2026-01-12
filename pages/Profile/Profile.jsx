@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Profile.css";
 import profile from "../../assets/profile.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,6 +10,8 @@ import {
 import { faCirclePlay, faBookmark } from "@fortawesome/free-regular-svg-icons";
 
 const Profile = () => {
+  const [activeIcon, setActiveIcon] = useState("posts");
+
   return (
     <div className="profile__page">
       <div className="profile__page--one">
@@ -43,15 +45,36 @@ const Profile = () => {
       </div>
       <div className="profile__page--content">
         <div className="profile__page--icons">
-          <FontAwesomeIcon
-            className="profile__page--icon"
-            icon={faTableCells}
-          />
-          <FontAwesomeIcon className="profile__page--icon" icon={faBookmark} />
-          <FontAwesomeIcon
-            className="profile__page--icon"
-            icon={faImagePortrait}
-          />
+          <div
+            className={`icon__wrapper ${
+              activeIcon === "posts" ? "active" : ""
+            }`}
+            onClick={() => setActiveIcon("posts")}
+          >
+            <FontAwesomeIcon
+              className="profile__page--icon"
+              icon={faTableCells}
+            />
+          </div>
+          <div
+            className={`icon__wrapper ${
+              activeIcon === "saved" ? "active" : ""
+            }`}
+            onClick={() => setActiveIcon("saved")}
+          >
+            <FontAwesomeIcon className="profile__page--icon" icon={faBookmark}/>
+          </div>
+          <div
+            className={`icon__wrapper ${
+              activeIcon === "tagged" ? "active" : ""
+            }`}
+            onClick={() => setActiveIcon("tagged")}
+          >
+            <FontAwesomeIcon
+              className="profile__page--icon"
+              icon={faImagePortrait}
+            />
+          </div>
         </div>
       </div>
     </div>
