@@ -9,6 +9,7 @@ import Explore from './pages/Explore/Explore';
 import Reels from './pages/Reels/Reels';
 import Messages from './pages/Messages/Messages';
 import Profile from './pages/Profile/Profile';
+import UsersProfiles from './pages/UsersProfiles/UsersProfiles';
 
 
 function App() {
@@ -37,7 +38,8 @@ function App() {
           <Route path='/explore' element={<Explore />} />
           <Route path='/reels' element={<Reels />} />
           <Route path='/messages' element={<Messages />} />
-          <Route path='/profile' element={<Profile />} />
+          <Route path='/profile' exact element={<Profile />} />
+          <Route path='/profile/:username' element={<UsersProfiles/>} />
         </Routes>
     </div>
   );

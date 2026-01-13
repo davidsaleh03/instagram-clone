@@ -41,7 +41,6 @@
 .icon__wrapper {
   display: inline-block;
   position: relative;
-  margin-right: 50px; 
   cursor: pointer;
 }
 
@@ -139,6 +138,15 @@
  
 .profile__page--icon:not(:last-child) {
 margin-right: 150px;
+}
+
+.profile__page--sections {
+    margin-bottom: 75px;
+
+}
+
+.footer__section {
+    margin-bottom: 24px;
 }
 
 

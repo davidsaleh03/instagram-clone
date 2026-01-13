@@ -1,70 +1,53 @@
-import React from "react";
-import "./Profile.css";
-import profile from "../../assets/profile.png";
+import React from 'react'
+import './UserProfiles.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { auth, db } from "../../firebase";
-import { doc, getDoc } from "firebase/firestore";
-import { onAuthStateChanged } from "firebase/auth";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {
   faGear,
   faTableCells,
   faImagePortrait,
+  faCirclePlay,
 } from "@fortawesome/free-solid-svg-icons";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
-import YourPosts from "../../components/YourPosts";
-import YourSaved from "../../components/YourSaved";
-import YourTagged from "../../components/YourTagged";
-import Footer from "../../components/Footer";
+import Footer from '../../components/Footer';
+import homeuser from '../../assets/home-user.js'
+import { useParams } from 'react-router-dom';
 
-const Profile = () => {
-  const [activeIcon, setActiveIcon] = useState("posts");
-  const [profileData, setProfileData] = useState(null);
-  
-  useEffect(() => {
-  const unsub = onAuthStateChanged(auth, async (user) => {
-    if (!user) return;
+const UsersProfiles = () => {
+    const [activeIcon, setActiveIcon] = useState("posts");
+    const {username} = useParams()
 
-    try {
-      const docRef = doc(db, "users", user.uid);
-      const docSnap = await getDoc(docRef);
-      if (docSnap.exists()) {
-        setProfileData(docSnap.data());
-      }
-    } catch (error) {
-      console.error("Error fetching profile:", error);
-    }
-  });
-
-  return () => unsub();
-}, []);
+    const userPosts = homeuser.posts.filter(
+    (post) => post.username === username
+  );
+  const user = userPosts[0];
   return (
     <div className="profile__page">
       <div className="profile__page--one">
         <div className="profile__top">
           <figure className="profile__top--figure">
-            <img src={profile} alt="" className="profile__top--img" />
+            <img src={user.image} alt="" className="profile__top--img" />
           </figure>
           <div className="profile__top--right">
             <div className="right__top">
-              <h1>{profileData?.name || "Username"}</h1>
+              <h1>{user.username}</h1>
               <h1 className="right__top--btn">Edit profile</h1>
               <h1 className="right__top--btn">View archive</h1>
               <FontAwesomeIcon icon={faGear} />
             </div>
             <div className="profile__middle">
               <h1>
-                <span className="bold">0</span>posts
+                <span className="bold">5</span>posts
               </h1>
               <h1>
-                <span className="bold">0</span>followers
+                <span className="bold">{user.followers}</span>followers
               </h1>
               <h1>
-                <span className="bold">0</span>following
+                <span className="bold">{user.following}</span>following
               </h1>
             </div>
             <div className="profile__bottom">
-              <h1>{profileData?.username || "Name here"}</h1>
+              <h1>{user.name}</h1>
             </div>
           </div>
         </div>
@@ -88,7 +71,7 @@ const Profile = () => {
             }`}
             onClick={() => setActiveIcon("saved")}
           >
-            <FontAwesomeIcon className="profile__page--icon" icon={faBookmark}/>
+            <FontAwesomeIcon className="profile__page--icon" icon={faCirclePlay}/>
           </div>
           <div
             className={`icon__wrapper ${
@@ -104,15 +87,13 @@ const Profile = () => {
         </div>
       </div>
       <div className="profile__page--sections">
-        {activeIcon === 'posts' && <YourPosts />}
-        {activeIcon === 'saved' && <YourSaved />}
-        {activeIcon === 'tagged' && <YourTagged />}
+      
       </div>
       <div className="footer__section">
       <Footer />
       </div>
     </div>
   );
-};
+}
 
-export default Profile;
+export default UsersProfiles

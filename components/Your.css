@@ -1,0 +1,36 @@
+.YourPosts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 125px;
+}
+
+.camera__figure {
+    width: 62px;
+    height: 62px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.camera__icon {
+    font-size: 36px;
+}
+
+.YourPosts p{
+    width: 250px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.YourPosts h1 {
+    margin-bottom: 14px;
+}
+
+.Yourbtn {
+    width: 175px;
+    cursor: not-allowed;
+}

@@ -64,10 +64,12 @@ function Sidebar() {
             </Link>
         </ul>
         <ul className="side__bottom">
+            <Link to='/profile/daily_nutrition'>
             <li className="bottom__link">
                <FontAwesomeIcon icon={faBars} className="side__icon" />
                 <h1>More</h1> 
             </li>
+            </Link>
             <li className="bottom__link">
                 <FontAwesomeIcon icon={faCircleHalfStroke} onClick={logout}className="side__icon" />
                 <h1>Display</h1> 

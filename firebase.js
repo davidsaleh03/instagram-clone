@@ -6,7 +6,7 @@ import {
   signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
-import { addDoc, collection, getFirestore } from "firebase/firestore";
+import { doc, setDoc, getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyD5Y4ZNdWy1gytcHvgd4Vh7cRaaHU2yaR8",
@@ -22,19 +22,28 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 
 const signup = async (username, name, email, password) => {
-    try {
-        const res = await createUserWithEmailAndPassword(auth, email, password);
-        const user = res.user;
-        await addDoc(collection(db, "users", user.uid), {
-            name,
-            username,
-            email,
-            authProvider: "local",
-        });
-    } catch (error) {
-        console.log(error);
-    }
-}
+  try {
+    const res = await createUserWithEmailAndPassword(
+      auth,
+      email,
+      password
+    );
+
+    const user = res.user;
+
+    await setDoc(doc(db, "users", user.uid), {
+      uid: user.uid,
+      name,
+      username,
+      email,
+      authProvider: "local",
+      createdAt: new Date(),
+    });
+
+  } catch (error) {
+    console.log(error);
+  }
+};
 
 const login = async (email, password) => {
     try {
