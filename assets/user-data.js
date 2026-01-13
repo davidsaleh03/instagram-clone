@@ -15,6 +15,7 @@ import nutrition2 from './nutrition2.jpg'
 import nutrition3 from './nutrition3.jpg'
 import nutrition4 from './nutrition4.jpg'
 import nutrition5 from './nutrition5.jpg'
+import nutrition6 from './nutrition6.jpg'
 
 const user1 = {
   users: [
@@ -199,77 +200,77 @@ const user1 = {
       likes: 1504,
       createdAt: "2025-12-03",
       comments: [
-        {
-          id: 1001,
-          postId: 101,
-          username: "MuscleMama",
-          text: "Can’t argue with that! Protein shakes are basically my besties 🥤💪",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1002,
-          postId: 101,
-          username: "GainTrain",
-          text: "Leg day wouldn’t be the same without it 😎",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1003,
-          postId: 101,
-          username: "FitFuel",
-          text: "Eggs, chicken, beans… I love my protein squad 🍳🍗",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1004,
-          postId: 101,
-          username: "HealthyHarry",
-          text: "Preach! Protein keeps me full and energized all day 🔋",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1005,
-          postId: 101,
-          username: "StrongSnack",
-          text: "I keep protein bars in every bag—just in case 😅",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1006,
-          postId: 101,
-          username: "VeganPower",
-          text: "Plant protein is life too! Lentils and tofu represent 🌱",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1007,
-          postId: 101,
-          username: "ProteinQueen",
-          text: "Yes! Gains don’t happen without a little help from protein 💯",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1008,
-          postId: 101,
-          username: "GymBuddy88",
-          text: "Shoutout to protein shakes after heavy workouts 👊",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1009,
-          postId: 101,
-          username: "SmartEater",
-          text: "Honestly, it’s amazing how protein can turn a simple meal into a power meal 🍗🥚",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1010,
-          postId: 101,
-          username: "FuelUpFast",
-          text: "Protein isn’t just a friend—it’s family 💪😄",
-          createdAt: "2025-12-01",
-        },
-      ]
+  {
+    id: 2001,
+    postId: 102,
+    username: "GreenGourmet",
+    text: "So true! Simple meals are way easier to stick with 🥗",
+    createdAt: "2025-12-02",
+  },
+  {
+    id: 2002,
+    postId: 102,
+    username: "FitFoodie22",
+    text: "Healthy really doesn’t have to be complicated 😋",
+    createdAt: "2025-12-02",
+  },
+  {
+    id: 2003,
+    postId: 102,
+    username: "VeganVibes",
+    text: "Avocado toast for life 🥑✨",
+    createdAt: "2025-12-02",
+  },
+  {
+    id: 2004,
+    postId: 102,
+    username: "WellnessWithWendy",
+    text: "Whole foods + simple prep = winning combo 🌱",
+    createdAt: "2025-12-02",
+  },
+  {
+    id: 2005,
+    postId: 102,
+    username: "SnackSmart",
+    text: "Swapping snacks made the biggest difference for me 🙌",
+    createdAt: "2025-12-02",
+  },
+  {
+    id: 2006,
+    postId: 102,
+    username: "CleanEats101",
+    text: "Keeping it simple is the secret most people miss 👌",
+    createdAt: "2025-12-02",
+  },
+  {
+    id: 2007,
+    postId: 102,
+    username: "NutriNerd",
+    text: "Consistency beats complexity every time 💪",
+    createdAt: "2025-12-02",
+  },
+  {
+    id: 2008,
+    postId: 102,
+    username: "MorningSmoothie",
+    text: "This inspired my meal prep for the week 🥕🥬",
+    createdAt: "2025-12-02",
+  },
+  {
+    id: 2009,
+    postId: 102,
+    username: "PlantPower",
+    text: "Fresh ingredients really do make everything better 🌿",
+    createdAt: "2025-12-02",
+  },
+  {
+    id: 2010,
+    postId: 102,
+    username: "SimpleSuppers",
+    text: "Three ingredients can still taste amazing 😄",
+    createdAt: "2025-12-02",
+  },
+],
     },
     {
       id: 104,
@@ -279,77 +280,77 @@ const user1 = {
       likes: 876,
       createdAt: "2025-12-04",
       comments: [
-        {
-          id: 1001,
-          postId: 101,
-          username: "MuscleMama",
-          text: "Can’t argue with that! Protein shakes are basically my besties 🥤💪",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1002,
-          postId: 101,
-          username: "GainTrain",
-          text: "Leg day wouldn’t be the same without it 😎",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1003,
-          postId: 101,
-          username: "FitFuel",
-          text: "Eggs, chicken, beans… I love my protein squad 🍳🍗",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1004,
-          postId: 101,
-          username: "HealthyHarry",
-          text: "Preach! Protein keeps me full and energized all day 🔋",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1005,
-          postId: 101,
-          username: "StrongSnack",
-          text: "I keep protein bars in every bag—just in case 😅",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1006,
-          postId: 101,
-          username: "VeganPower",
-          text: "Plant protein is life too! Lentils and tofu represent 🌱",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1007,
-          postId: 101,
-          username: "ProteinQueen",
-          text: "Yes! Gains don’t happen without a little help from protein 💯",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1008,
-          postId: 101,
-          username: "GymBuddy88",
-          text: "Shoutout to protein shakes after heavy workouts 👊",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1009,
-          postId: 101,
-          username: "SmartEater",
-          text: "Honestly, it’s amazing how protein can turn a simple meal into a power meal 🍗🥚",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1010,
-          postId: 101,
-          username: "FuelUpFast",
-          text: "Protein isn’t just a friend—it’s family 💪😄",
-          createdAt: "2025-12-01",
-        },
-      ]
+  {
+    id: 4001,
+    postId: 104,
+    username: "MindfulMoves",
+    text: "This is such an important reminder ✨ small steps really matter",
+    createdAt: "2025-12-04",
+  },
+  {
+    id: 4002,
+    postId: 104,
+    username: "DailyHabits",
+    text: "Consistency beats motivation every time 🙌",
+    createdAt: "2025-12-04",
+  },
+  {
+    id: 4003,
+    postId: 104,
+    username: "WellnessJourney",
+    text: "Needed to hear this today 🤍",
+    createdAt: "2025-12-04",
+  },
+  {
+    id: 4004,
+    postId: 104,
+    username: "ProgressNotPerfection",
+    text: "One small change a day adds up fast 💯",
+    createdAt: "2025-12-04",
+  },
+  {
+    id: 4005,
+    postId: 104,
+    username: "HealthyMindset",
+    text: "This mindset shift changed everything for me 🌱",
+    createdAt: "2025-12-04",
+  },
+  {
+    id: 4006,
+    postId: 104,
+    username: "StepByStep",
+    text: "Slow progress is still progress 🚶‍♀️✨",
+    createdAt: "2025-12-04",
+  },
+  {
+    id: 4007,
+    postId: 104,
+    username: "BalancedLiving",
+    text: "Love content like this — so grounding 💚",
+    createdAt: "2025-12-04",
+  },
+  {
+    id: 4008,
+    postId: 104,
+    username: "HabitBuilder",
+    text: "Tiny habits are the secret nobody talks about 🔑",
+    createdAt: "2025-12-04",
+  },
+  {
+    id: 4009,
+    postId: 104,
+    username: "DailyGrowth",
+    text: "This inspired me to start small instead of quitting 😄",
+    createdAt: "2025-12-04",
+  },
+  {
+    id: 4010,
+    postId: 104,
+    username: "SelfCareDaily",
+    text: "Little changes, big impact ✨ saving this",
+    createdAt: "2025-12-04",
+  },
+],
     },
     {
       id: 105,
@@ -359,157 +360,157 @@ const user1 = {
       likes: 1678,
       createdAt: "2025-12-05",
       comments: [
-        {
-          id: 1001,
-          postId: 101,
-          username: "MuscleMama",
-          text: "Can’t argue with that! Protein shakes are basically my besties 🥤💪",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1002,
-          postId: 101,
-          username: "GainTrain",
-          text: "Leg day wouldn’t be the same without it 😎",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1003,
-          postId: 101,
-          username: "FitFuel",
-          text: "Eggs, chicken, beans… I love my protein squad 🍳🍗",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1004,
-          postId: 101,
-          username: "HealthyHarry",
-          text: "Preach! Protein keeps me full and energized all day 🔋",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1005,
-          postId: 101,
-          username: "StrongSnack",
-          text: "I keep protein bars in every bag—just in case 😅",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1006,
-          postId: 101,
-          username: "VeganPower",
-          text: "Plant protein is life too! Lentils and tofu represent 🌱",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1007,
-          postId: 101,
-          username: "ProteinQueen",
-          text: "Yes! Gains don’t happen without a little help from protein 💯",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1008,
-          postId: 101,
-          username: "GymBuddy88",
-          text: "Shoutout to protein shakes after heavy workouts 👊",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1009,
-          postId: 101,
-          username: "SmartEater",
-          text: "Honestly, it’s amazing how protein can turn a simple meal into a power meal 🍗🥚",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1010,
-          postId: 101,
-          username: "FuelUpFast",
-          text: "Protein isn’t just a friend—it’s family 💪😄",
-          createdAt: "2025-12-01",
-        },
-      ]
+    {
+      id: 1051,
+      postId: 105,
+      username: "healthy_hues",
+      text: "Love the vibrant reminder! 🌟",
+      createdAt: "2025-12-05"
+    },
+    {
+      id: 1052,
+      postId: 105,
+      username: "colorful_bites",
+      text: "Eating the rainbow never looked so good 🌈",
+      createdAt: "2025-12-05"
+    },
+    {
+      id: 1053,
+      postId: 105,
+      username: "wellness_journey",
+      text: "So inspiring, adding more colors to my plate!",
+      createdAt: "2025-12-05"
+    },
+    {
+      id: 1054,
+      postId: 105,
+      username: "mindful_eater",
+      text: "Feeling healthier already 🍎🥦",
+      createdAt: "2025-12-05"
+    },
+    {
+      id: 1055,
+      postId: 105,
+      username: "nutri_ninja",
+      text: "Vibrant meals = happy vibes ✨",
+      createdAt: "2025-12-05"
+    },
+    {
+      id: 1056,
+      postId: 105,
+      username: "fresh_forks",
+      text: "Colorful plates, colorful days 🌞",
+      createdAt: "2025-12-05"
+    },
+    {
+      id: 1057,
+      postId: 105,
+      username: "green_gourmet",
+      text: "Adding more veggies starting today 🥕",
+      createdAt: "2025-12-05"
+    },
+    {
+      id: 1058,
+      postId: 105,
+      username: "vibrant_life",
+      text: "Eating this way makes mornings better 🌸",
+      createdAt: "2025-12-05"
+    },
+    {
+      id: 1059,
+      postId: 105,
+      username: "fresh_plate_daily",
+      text: "Mood booster just by looking at this 🥗",
+      createdAt: "2025-12-05"
+    },
+    {
+      id: 1060,
+      postId: 105,
+      username: "happy_tummy",
+      text: "Yum! Rainbow on my plate 🌈😋",
+      createdAt: "2025-12-05"
+    }
+  ],
     },
     {
       id: 106,
       userId: 1,
-      image: {postimg6},
+      image: {nutrition6},
       caption: "Hydration matters 💧",
       likes: 742,
       createdAt: "2025-12-06",
       comments: [
-        {
-          id: 1001,
-          postId: 101,
-          username: "MuscleMama",
-          text: "Can’t argue with that! Protein shakes are basically my besties 🥤💪",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1002,
-          postId: 101,
-          username: "GainTrain",
-          text: "Leg day wouldn’t be the same without it 😎",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1003,
-          postId: 101,
-          username: "FitFuel",
-          text: "Eggs, chicken, beans… I love my protein squad 🍳🍗",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1004,
-          postId: 101,
-          username: "HealthyHarry",
-          text: "Preach! Protein keeps me full and energized all day 🔋",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1005,
-          postId: 101,
-          username: "StrongSnack",
-          text: "I keep protein bars in every bag—just in case 😅",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1006,
-          postId: 101,
-          username: "VeganPower",
-          text: "Plant protein is life too! Lentils and tofu represent 🌱",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1007,
-          postId: 101,
-          username: "ProteinQueen",
-          text: "Yes! Gains don’t happen without a little help from protein 💯",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1008,
-          postId: 101,
-          username: "GymBuddy88",
-          text: "Shoutout to protein shakes after heavy workouts 👊",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1009,
-          postId: 101,
-          username: "SmartEater",
-          text: "Honestly, it’s amazing how protein can turn a simple meal into a power meal 🍗🥚",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1010,
-          postId: 101,
-          username: "FuelUpFast",
-          text: "Protein isn’t just a friend—it’s family 💪😄",
-          createdAt: "2025-12-01",
-        },
-      ]
+    {
+      id: 1061,
+      postId: 106,
+      username: "aqua_life",
+      text: "So true! Can’t underestimate water 💦",
+      createdAt: "2025-12-06"
+    },
+    {
+      id: 1062,
+      postId: 106,
+      username: "hydrate_daily",
+      text: "Just what I needed to see today 😌",
+      createdAt: "2025-12-06"
+    },
+    {
+      id: 1063,
+      postId: 106,
+      username: "thirsty_for_health",
+      text: "Water = life 💧",
+      createdAt: "2025-12-06"
+    },
+    {
+      id: 1064,
+      postId: 106,
+      username: "wellness_splash",
+      text: "Reminder to drink up! 🥤",
+      createdAt: "2025-12-06"
+    },
+    {
+      id: 1065,
+      postId: 106,
+      username: "pure_h2o",
+      text: "Hydration is everything ✨",
+      createdAt: "2025-12-06"
+    },
+    {
+      id: 1066,
+      postId: 106,
+      username: "daily_drizzle",
+      text: "Already had 3 glasses today, feeling good! 😎",
+      createdAt: "2025-12-06"
+    },
+    {
+      id: 1067,
+      postId: 106,
+      username: "sips_of_health",
+      text: "Little reminder that water > everything else 💙",
+      createdAt: "2025-12-06"
+    },
+    {
+      id: 1068,
+      postId: 106,
+      username: "refresh_routine",
+      text: "Hydrate, rejuvenate, repeat 🔁",
+      createdAt: "2025-12-06"
+    },
+    {
+      id: 1069,
+      postId: 106,
+      username: "crystal_cups",
+      text: "My daily mantra now 💧💧",
+      createdAt: "2025-12-06"
+    },
+    {
+      id: 1070,
+      postId: 106,
+      username: "flow_state",
+      text: "Staying hydrated never looked so good! 😍",
+      createdAt: "2025-12-06"
+    }
+  ]
     },
   ],
 };
@@ -929,6 +930,14 @@ const user2 = {
         },
       ]
     },
+    {
+  id: 206,
+  userId: 2,
+  image: {postimg6},
+  caption: "Keep going ✨",
+  likes: 2540,
+  createdAt: "2025-12-10"
+}
   ],
 
 };
@@ -1427,326 +1436,6 @@ const user3 = {
         },
       ]
     },
-    {
-      id: 307,
-      userId: 3,
-      image: {postimg1},
-      caption: "Pizza makes everything better 🍕",
-      likes: 4025,
-      createdAt: "2025-12-07",
-      comments: [
-        {
-          id: 1001,
-          postId: 101,
-          username: "MuscleMama",
-          text: "Can’t argue with that! Protein shakes are basically my besties 🥤💪",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1002,
-          postId: 101,
-          username: "GainTrain",
-          text: "Leg day wouldn’t be the same without it 😎",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1003,
-          postId: 101,
-          username: "FitFuel",
-          text: "Eggs, chicken, beans… I love my protein squad 🍳🍗",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1004,
-          postId: 101,
-          username: "HealthyHarry",
-          text: "Preach! Protein keeps me full and energized all day 🔋",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1005,
-          postId: 101,
-          username: "StrongSnack",
-          text: "I keep protein bars in every bag—just in case 😅",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1006,
-          postId: 101,
-          username: "VeganPower",
-          text: "Plant protein is life too! Lentils and tofu represent 🌱",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1007,
-          postId: 101,
-          username: "ProteinQueen",
-          text: "Yes! Gains don’t happen without a little help from protein 💯",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1008,
-          postId: 101,
-          username: "GymBuddy88",
-          text: "Shoutout to protein shakes after heavy workouts 👊",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1009,
-          postId: 101,
-          username: "SmartEater",
-          text: "Honestly, it’s amazing how protein can turn a simple meal into a power meal 🍗🥚",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1010,
-          postId: 101,
-          username: "FuelUpFast",
-          text: "Protein isn’t just a friend—it’s family 💪😄",
-          createdAt: "2025-12-01",
-        },
-      ]
-    },
-    {
-      id: 308,
-      userId: 3,
-      image: {postimg2},
-      caption: "Coffee first, talk later ☕",
-      likes: 2590,
-      createdAt: "2025-12-08",
-      comments: [
-        {
-          id: 1001,
-          postId: 101,
-          username: "MuscleMama",
-          text: "Can’t argue with that! Protein shakes are basically my besties 🥤💪",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1002,
-          postId: 101,
-          username: "GainTrain",
-          text: "Leg day wouldn’t be the same without it 😎",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1003,
-          postId: 101,
-          username: "FitFuel",
-          text: "Eggs, chicken, beans… I love my protein squad 🍳🍗",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1004,
-          postId: 101,
-          username: "HealthyHarry",
-          text: "Preach! Protein keeps me full and energized all day 🔋",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1005,
-          postId: 101,
-          username: "StrongSnack",
-          text: "I keep protein bars in every bag—just in case 😅",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1006,
-          postId: 101,
-          username: "VeganPower",
-          text: "Plant protein is life too! Lentils and tofu represent 🌱",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1007,
-          postId: 101,
-          username: "ProteinQueen",
-          text: "Yes! Gains don’t happen without a little help from protein 💯",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1008,
-          postId: 101,
-          username: "GymBuddy88",
-          text: "Shoutout to protein shakes after heavy workouts 👊",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1009,
-          postId: 101,
-          username: "SmartEater",
-          text: "Honestly, it’s amazing how protein can turn a simple meal into a power meal 🍗🥚",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1010,
-          postId: 101,
-          username: "FuelUpFast",
-          text: "Protein isn’t just a friend—it’s family 💪😄",
-          createdAt: "2025-12-01",
-        },
-      ]
-    },
-    {
-      id: 309,
-      userId: 3,
-      image: {postimg4},
-      caption: "Homemade but make it fancy ✨",
-      likes: 2910,
-      createdAt: "2025-12-09",
-      comments: [
-        {
-          id: 1001,
-          postId: 101,
-          username: "MuscleMama",
-          text: "Can’t argue with that! Protein shakes are basically my besties 🥤💪",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1002,
-          postId: 101,
-          username: "GainTrain",
-          text: "Leg day wouldn’t be the same without it 😎",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1003,
-          postId: 101,
-          username: "FitFuel",
-          text: "Eggs, chicken, beans… I love my protein squad 🍳🍗",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1004,
-          postId: 101,
-          username: "HealthyHarry",
-          text: "Preach! Protein keeps me full and energized all day 🔋",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1005,
-          postId: 101,
-          username: "StrongSnack",
-          text: "I keep protein bars in every bag—just in case 😅",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1006,
-          postId: 101,
-          username: "VeganPower",
-          text: "Plant protein is life too! Lentils and tofu represent 🌱",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1007,
-          postId: 101,
-          username: "ProteinQueen",
-          text: "Yes! Gains don’t happen without a little help from protein 💯",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1008,
-          postId: 101,
-          username: "GymBuddy88",
-          text: "Shoutout to protein shakes after heavy workouts 👊",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1009,
-          postId: 101,
-          username: "SmartEater",
-          text: "Honestly, it’s amazing how protein can turn a simple meal into a power meal 🍗🥚",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1010,
-          postId: 101,
-          username: "FuelUpFast",
-          text: "Protein isn’t just a friend—it’s family 💪😄",
-          createdAt: "2025-12-01",
-        },
-      ]
-    },
-    {
-      id: 310,
-      userId: 3,
-      image: {postimg1},
-      caption: "Ending the week on a sweet note 🍩",
-      likes: 4210,
-      createdAt: "2025-12-10",
-      comments: [
-        {
-          id: 1001,
-          postId: 101,
-          username: "MuscleMama",
-          text: "Can’t argue with that! Protein shakes are basically my besties 🥤💪",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1002,
-          postId: 101,
-          username: "GainTrain",
-          text: "Leg day wouldn’t be the same without it 😎",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1003,
-          postId: 101,
-          username: "FitFuel",
-          text: "Eggs, chicken, beans… I love my protein squad 🍳🍗",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1004,
-          postId: 101,
-          username: "HealthyHarry",
-          text: "Preach! Protein keeps me full and energized all day 🔋",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1005,
-          postId: 101,
-          username: "StrongSnack",
-          text: "I keep protein bars in every bag—just in case 😅",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1006,
-          postId: 101,
-          username: "VeganPower",
-          text: "Plant protein is life too! Lentils and tofu represent 🌱",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1007,
-          postId: 101,
-          username: "ProteinQueen",
-          text: "Yes! Gains don’t happen without a little help from protein 💯",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1008,
-          postId: 101,
-          username: "GymBuddy88",
-          text: "Shoutout to protein shakes after heavy workouts 👊",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1009,
-          postId: 101,
-          username: "SmartEater",
-          text: "Honestly, it’s amazing how protein can turn a simple meal into a power meal 🍗🥚",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1010,
-          postId: 101,
-          username: "FuelUpFast",
-          text: "Protein isn’t just a friend—it’s family 💪😄",
-          createdAt: "2025-12-01",
-        },
-      ]
-    },
   ],
 };
 const user4 = {
@@ -2164,6 +1853,14 @@ const user4 = {
         },
       ]
     },
+    {
+  id: 406,
+  userId: 4,
+  image: {postimg6},
+  caption: "Focus today, shine tomorrow ✨",
+  likes: 2400,
+  createdAt: "2025-12-11"
+},
   ],
 };
 const user5 = {
@@ -2581,6 +2278,14 @@ const user5 = {
         },
       ]
     },
+    {
+  id: 506,
+  userId: 5,
+  image: {postimg6},
+  caption: "Adventure awaits 🌄",
+  likes: 4700,
+  createdAt: "2025-12-12"
+},
   ],
 };
 const user6 = {
