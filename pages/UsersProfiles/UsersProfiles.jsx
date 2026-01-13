@@ -28,26 +28,27 @@ const UsersProfiles = () => {
           <figure className="profile__top--figure">
             <img src={user.image} alt="" className="profile__top--img" />
           </figure>
-          <div className="profile__top--right">
+          <div className="profile__top--right profile__top--margin">
             <div className="right__top">
               <h1>{user.username}</h1>
-              <h1 className="right__top--btn">Edit profile</h1>
-              <h1 className="right__top--btn">View archive</h1>
-              <FontAwesomeIcon icon={faGear} />
+              <h1 className="right__top--btn right__one cursor-option">Follow</h1>
+              <h1 className="right__top--btn cursor-no">Message</h1>
+              <FontAwesomeIcon className='cursor-no' icon={faGear} />
             </div>
             <div className="profile__middle">
               <h1>
-                <span className="bold">5</span>posts
+                <span className="bold">7</span>posts
               </h1>
               <h1>
-                <span className="bold">{user.followers}</span>followers
+                <span className="bold cursor-no">{user.followers}</span>followers
               </h1>
               <h1>
-                <span className="bold">{user.following}</span>following
+                <span className="bold cursor-no">{user.following}</span>following
               </h1>
             </div>
             <div className="profile__bottom">
               <h1>{user.name}</h1>
+              <h2>{user.caption}</h2>
             </div>
           </div>
         </div>

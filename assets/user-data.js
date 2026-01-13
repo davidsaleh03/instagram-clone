@@ -10,6 +10,11 @@ import profile3 from './daily_foodie.jpg'
 import profile4 from './study.smart.jpg'
 import profile5 from './wander.daily.jpg'
 import profile6 from './code.daily.jpg'
+import nutrition1 from './nutrition1.jpg'
+import nutrition2 from './nutrition2.jpg'
+import nutrition3 from './nutrition3.jpg'
+import nutrition4 from './nutrition4.jpg'
+import nutrition5 from './nutrition5.jpg'
 
 const user1 = {
   users: [
@@ -29,7 +34,7 @@ const user1 = {
     {
       id: 101,
       userId: 1,
-      image: {postimg1},
+      image: {nutrition1},
       caption: "Fuel your body with real food 🌱",
       likes: 1203,
       createdAt: "2025-12-01",
@@ -109,7 +114,7 @@ const user1 = {
     {
       id: 102,
       userId: 1,
-      image: {postimg2},
+      image: {nutrition2},
       caption: "Healthy eating doesn’t have to be complicated 🥑",
       likes: 980,
       createdAt: "2025-12-02",
@@ -189,7 +194,7 @@ const user1 = {
     {
       id: 103,
       userId: 1,
-      image: {postimg3},
+      image: {nutrition3},
       caption: "Protein is your friend 💪",
       likes: 1504,
       createdAt: "2025-12-03",
@@ -269,7 +274,7 @@ const user1 = {
     {
       id: 104,
       userId: 1,
-      image: {postimg4},
+      image: {nutrition4},
       caption: "Small changes add up ✨",
       likes: 876,
       createdAt: "2025-12-04",
@@ -349,7 +354,7 @@ const user1 = {
     {
       id: 105,
       userId: 1,
-      image: {postimg5},
+      image: {nutrition5},
       caption: "Eat colors, feel better 🌈",
       likes: 1678,
       createdAt: "2025-12-05",

@@ -1,4 +1,4 @@
-import postimg1 from './images-11.jpg'
+
 import profile1 from './daily_nutrition.jpg'
 import profile2 from './daily_inspiration.jpg'
 import profile3 from './daily_foodie.jpg'

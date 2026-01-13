@@ -2,3 +2,17 @@
     border-radius: 50%;
     overflow: hidden;
 }
+
+.right__one {
+    background: linear-gradient(90deg, #4F5BFF 0%, #6A5CFF 100%) !important;
+}
+
+.profile__bottom h2{
+font-size: 12px;
+font-weight: 300;
+margin-top: 12px;
+}
+
+.profile__top--margin {
+    margin-top: 12px;
+}

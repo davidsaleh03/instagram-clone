@@ -12,9 +12,9 @@ import profileImg from "../assets/profile.png";
 const ReelsComments = ({ comments }) => {
   return (
     <div className="comments__area">
-      {comments.map((comment) => {
+      {comments.map((comment, index) => {
         return (
-          <div className="comments__actual" key={comment.index}>
+          <div className="comments__actual" key={index}>
             <figure className="comment__profile">
               <img src={profileImg} alt="" className="comment__img" />
             </figure>

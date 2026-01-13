@@ -48,19 +48,19 @@ const Profile = () => {
           <div className="profile__top--right">
             <div className="right__top">
               <h1>{profileData?.name || "Username"}</h1>
-              <h1 className="right__top--btn">Edit profile</h1>
-              <h1 className="right__top--btn">View archive</h1>
-              <FontAwesomeIcon icon={faGear} />
+              <h1 className="right__top--btn cursor-no">Edit profile</h1>
+              <h1 className="right__top--btn cursor-no">View archive</h1>
+              <FontAwesomeIcon className='cursor-no' icon={faGear} />
             </div>
             <div className="profile__middle">
               <h1>
                 <span className="bold">0</span>posts
               </h1>
               <h1>
-                <span className="bold">0</span>followers
+                <span className="bold cursor-no">0</span>followers
               </h1>
               <h1>
-                <span className="bold">0</span>following
+                <span className="bold cursor-no">0</span>following
               </h1>
             </div>
             <div className="profile__bottom">

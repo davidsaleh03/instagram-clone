@@ -42,3 +42,7 @@ a {
 .cursor-option {
   cursor: pointer;
 }
+
+.cursor-no {
+  cursor: not-allowed;
+}
