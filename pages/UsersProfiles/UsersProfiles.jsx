@@ -7,11 +7,13 @@ import {
   faTableCells,
   faImagePortrait,
   faCirclePlay,
+  faEllipsis,
+  faAngleLeft
 } from "@fortawesome/free-solid-svg-icons";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import Footer from '../../components/Footer';
 import homeuser from '../../assets/home-user.js'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import UserPosts from '../../components/UserPosts.jsx';
 
 const UsersProfiles = () => {
@@ -24,6 +26,12 @@ const UsersProfiles = () => {
   const user = userPost[0];
   return (
     <div className="profile__page">
+      <div className="top__small--bar">
+        <Link to='/' className="faAngleLeft-margin">
+        <FontAwesomeIcon className="faAngleLeft" icon={faAngleLeft} />
+        </Link>
+        <h1 className="top__title">{user.username}</h1>
+      </div>
       <div className="profile__page--one">
         <div className="profile__top">
           <figure className="profile__top--figure">
@@ -34,7 +42,7 @@ const UsersProfiles = () => {
               <h1>{user.username}</h1>
               <h1 className="right__top--btn right__one cursor-option">Follow</h1>
               <h1 className="right__top--btn cursor-no">Message</h1>
-              <FontAwesomeIcon className='cursor-no' icon={faGear} />
+              <FontAwesomeIcon className='ellipsis__small' icon={faEllipsis} />
             </div>
             <div className="profile__middle">
               <h1>
@@ -54,6 +62,20 @@ const UsersProfiles = () => {
           </div>
         </div>
       </div>
+            <div className="profile__middle--small">
+              <div className='profile__middle-h1'>
+                <h1 className="h1-bold">7</h1>
+                <h1>posts</h1>
+              </div>
+              <div className='profile__middle-h1'>
+                <h1 className="h1-bold">{user.followers}</h1>
+                <h1>followers</h1>
+              </div>
+              <div className='profile__middle-h1'>
+                <h1 className="h1-bold">{user.following}</h1>
+                <h1>following</h1>
+              </div>  
+            </div>
       <div className="profile__page--content">
         <div className="profile__page--icons">
           <div

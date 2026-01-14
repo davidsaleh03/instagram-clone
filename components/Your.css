@@ -34,3 +34,10 @@
     width: 175px;
     cursor: not-allowed;
 }
+
+@media (max-width: 767px) {
+    .YourPosts {
+        margin-top: 75px;
+        margin-bottom: 25px
+    }
+}

@@ -149,6 +149,10 @@ margin-right: 150px;
     margin-bottom: 24px;
 }
 
+.faGear-2 {
+    display: none;
+}
+
 
 @media (max-width: 1159px) {
     .profile__page{
@@ -170,10 +174,31 @@ margin-right: 150px;
         margin-left: 0px;
         margin-top: 56px;
     }
+    .profile__page--content:after {
+        width: 100%;
+    }
+    .right__top--btn-2 {
+        width: 120px !important;
+    }
+    .faGear-1 {
+        display: none;
+    }
+    .profile__bottom h1 {
+        margin-bottom: 12px;
+    }
+    .profile__top--right {
+        margin-top: 18px;
+    }
+    .faGear-2 {
+        display: flex;
+    }
 }
 
 @media(max-width: 767px) {
     .profileFooter {
         display: none !important;
+    }
+    .profile__page--one {
+        margin: 25px 0 85px 0;
     }
 }

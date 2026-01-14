@@ -10,12 +10,14 @@ import {
   faGear,
   faTableCells,
   faImagePortrait,
+  faAngleLeft
 } from "@fortawesome/free-solid-svg-icons";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import YourPosts from "../../components/YourPosts";
 import YourSaved from "../../components/YourSaved";
 import YourTagged from "../../components/YourTagged";
 import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
 
 const Profile = () => {
   const [activeIcon, setActiveIcon] = useState("posts");
@@ -40,6 +42,12 @@ const Profile = () => {
 }, []);
   return (
     <div className="profile__page">
+      <div className="top__small--bar">
+        <Link to='/' className="faAngleLeft-margin">
+        <FontAwesomeIcon className="faAngleLeft" icon={faAngleLeft} />
+        </Link>
+        <h1 className="top__title">{profileData?.name || "Username"}</h1>
+      </div>
       <div className="profile__page--one">
         <div className="profile__top">
           <figure className="profile__top--figure">
@@ -48,9 +56,9 @@ const Profile = () => {
           <div className="profile__top--right">
             <div className="right__top">
               <h1>{profileData?.name || "Username"}</h1>
-              <h1 className="right__top--btn cursor-no">Edit profile</h1>
-              <h1 className="right__top--btn cursor-no">View archive</h1>
-              <FontAwesomeIcon className='cursor-no' icon={faGear} />
+              <h1 className="right__top--btn right__top--btn-2 cursor-no">Edit profile</h1>
+              <h1 className="right__top--btn right__top--btn-2 cursor-no">View archive</h1>
+              <FontAwesomeIcon className='cursor-no faGear-1' icon={faGear} />
             </div>
             <div className="profile__middle">
               <h1>
@@ -65,6 +73,7 @@ const Profile = () => {
             </div>
             <div className="profile__bottom">
               <h1>{profileData?.username || "Name here"}</h1>
+              <FontAwesomeIcon className='cursor-no faGear-2' icon={faGear} />
             </div>
           </div>
         </div>

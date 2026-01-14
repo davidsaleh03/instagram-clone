@@ -18,6 +18,7 @@ function App() {
   const navigate = useNavigate()
   const location = useLocation()
   const hideSidebar = location.pathname === "/login"
+  const hideTopbar = location.pathname.startsWith("/profile")
 
   useEffect(() =>{
     onAuthStateChanged(auth, async (user)=> {
@@ -32,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-        {!hideSidebar && <Topbar />}
+        {!hideTopbar && <Topbar />}
         {!hideSidebar && <Sidebar />}
         <Routes>
           <Route path='/' element={<Home />} className="home-index" />

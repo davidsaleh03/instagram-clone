@@ -116,3 +116,12 @@ position: relative;
         width: 500px;
     }
 }
+
+@media(max-width: 767px) {
+    .user-posts {
+    margin-top: 11px;
+  }
+  .user__reels--section {
+        margin-top: 4px;
+    }
+}
