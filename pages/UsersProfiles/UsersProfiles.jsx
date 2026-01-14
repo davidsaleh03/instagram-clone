@@ -12,15 +12,16 @@ import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import Footer from '../../components/Footer';
 import homeuser from '../../assets/home-user.js'
 import { useParams } from 'react-router-dom';
+import UserPosts from '../../components/UserPosts.jsx';
 
 const UsersProfiles = () => {
     const [activeIcon, setActiveIcon] = useState("posts");
     const {username} = useParams()
 
-    const userPosts = homeuser.posts.filter(
+    const userPost = homeuser.posts.filter(
     (post) => post.username === username
   );
-  const user = userPosts[0];
+  const user = userPost[0];
   return (
     <div className="profile__page">
       <div className="profile__page--one">
@@ -88,7 +89,9 @@ const UsersProfiles = () => {
         </div>
       </div>
       <div className="profile__page--sections">
-      
+      {activeIcon === "posts" && <UserPosts uid={user.id} onActive='posts'/>}
+      {activeIcon === "saved" && <UserPosts uid={user.id} onActive='saved'/>}
+      {activeIcon === "tagged" && <UserPosts uid={user.id} onActive='tagged'/>}
       </div>
       <div className="footer__section">
       <Footer />

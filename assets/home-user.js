@@ -15,7 +15,7 @@ import reels6 from './code.daily.mp4'
 const homeuser = {
     posts:[
          {
-      id: 101,
+      id: 'user1',
       username: "daily_nutrition",
       name: 'Daily Nutrition',
       image: profile1,
@@ -98,7 +98,7 @@ const homeuser = {
       ],
     },
     {
-      id: 201,
+      id: 'user2',
       username: 'daily_inspiration',
       name: 'Daily Inspiration',
       image: profile2,
@@ -181,7 +181,7 @@ const homeuser = {
       ]
     },
     {
-      id: 301,
+      id: 'user3',
       userId: 3,
       username: "daily_foodie",
       name: 'Daily Foodie',
@@ -265,7 +265,7 @@ const homeuser = {
       ]
     },
      {
-      id: 307,
+      id: 'user4',
       userId: 3,
       username: "study.smart",
       name: 'Study Smart',
@@ -349,7 +349,7 @@ const homeuser = {
       ]
     },
     {
-      id: 401,
+      id: 'user5',
       userId: 4,
       username: "wander.daily",
       name: 'Wander Daily',
@@ -433,7 +433,7 @@ const homeuser = {
       ]
     },
     {
-      id: 501,
+      id: 'user6',
       userId: 5,
       username: "code.daily",
       name: 'Code Daily',
