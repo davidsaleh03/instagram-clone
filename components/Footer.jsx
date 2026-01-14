@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Footer.css"
 
-const Footer = () => {
+const Footer = ({classTop}) => {
   return (
-    <div className="footer">
+    <div className={`footer ${classTop}`}>
         <ul className="footer__list">
             <li className="footer__link">Meta</li>
             <li className="footer__link">About</li>

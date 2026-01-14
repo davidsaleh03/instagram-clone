@@ -230,10 +230,18 @@
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1159px) {
     .home{
         margin-left: 98px;
     }
+}
+
+@media (max-width: 767px) {
+    .home {
+        margin-left: 0px;
+        margin-top: 56px;
+    }
+   
 }
 
 @media (max-width: 1159px) {

@@ -2,10 +2,57 @@
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 0px; 
+  width: 825px;
+  margin-top: 48px;
+}
+
+.user__reels--section {
+    display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 4px 2px; 
   padding: 8px;
-  width: 925px;
+  width: 850px;
   margin-top: 48px;
+}
+
+.user__reel--section {
+    position: relative;
+    width: 225px;
+}
+
+.user__reelsect--icons {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 300ms ease;
+}
+
+.user__reel--figure {
+position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+  width: 225px;
+  height: 400px;
+  transition: all 300ms ease;
+}
+
+.user__reel--section:hover .user__reel--figure {
+    filter: brightness(30%);
+}
+
+.user__reel--section:hover .user__reelsect--icons {
+    display: flex;
+}
+
+.user__reel--figure video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .user__post--icons {
@@ -13,26 +60,29 @@
     display: none;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user__post--icon {
+    font-size: 22px;
 }
 
 .user-post {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s;
-  width: 300px;
-  height: 300px;
-  position: relative;
+  width: 275px;
+  height: 275px;
 }
 
 .user-post:hover .user-post-img{
-  transform: scale(1.05);
-  filter: brightness(60%);
+  /* transform: scale(1.05); */
+  filter: brightness(30%);
 }
 
 .user-post:hover .user__post--icons {
-    display: inline;
+    display: flex;
 }
 
 .user-post-img {
@@ -41,4 +91,28 @@
   object-fit: cover;
   display: block;
   transition: all 300ms ease;
+}
+
+.user__post--div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user__post--div:first-child {
+    margin-right: 12px;
+}
+
+.user__post--div h1 {
+    font-size: 22px;
+}
+
+@media(max-width: 1024px) {
+    .user-posts {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        width: 550px;
+    }
+    .user__reels--section {
+        width: 500px;
+    }
 }

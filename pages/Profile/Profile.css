@@ -131,7 +131,7 @@
     position: absolute;
     bottom: -10px;
     /* height: 1px; */
-    width: 80%;
+    width: 880px;
     border-bottom: 0.05px solid white;
     opacity: 0.5;
 }
@@ -150,8 +150,30 @@ margin-right: 150px;
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 1159px) {
     .profile__page{
         margin-left: 98px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .profile__page--content:after {
+        width: 80%;
+    }
+    .profile__page--icons {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .profile__page {
+        margin-left: 0px;
+        margin-top: 56px;
+    }
+}
+
+@media(max-width: 767px) {
+    .profileFooter {
+        display: none !important;
     }
 }

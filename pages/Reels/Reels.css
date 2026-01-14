@@ -247,8 +247,33 @@
     color: grey;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1159px) {
     .reels {
         margin-left: 98px;
+    }
+}
+
+@media (max-width: 767px) {
+    .reels {
+        margin-left: 0px;
+        margin-top: 56px;
+    }
+
+    .reels__content {
+        margin: 20px 0 120px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .reels__content {
+        width: 352px;
+    }
+
+    .reel__side {
+        right: 10px;
+    }
+
+    .reel__comments {
+        right: 45px;
     }
 }

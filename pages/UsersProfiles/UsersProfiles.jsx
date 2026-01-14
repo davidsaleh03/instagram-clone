@@ -94,7 +94,7 @@ const UsersProfiles = () => {
       {activeIcon === "tagged" && <UserPosts uid={user.id} onActive='tagged'/>}
       </div>
       <div className="footer__section">
-      <Footer />
+      <Footer classTop='profileFooter'/>
       </div>
     </div>
   );

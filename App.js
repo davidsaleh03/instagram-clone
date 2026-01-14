@@ -10,6 +10,7 @@ import Reels from './pages/Reels/Reels';
 import Messages from './pages/Messages/Messages';
 import Profile from './pages/Profile/Profile';
 import UsersProfiles from './pages/UsersProfiles/UsersProfiles';
+import Topbar from './components/Topbar';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className="App">
+        {!hideSidebar && <Topbar />}
         {!hideSidebar && <Sidebar />}
         <Routes>
           <Route path='/' element={<Home />} className="home-index" />

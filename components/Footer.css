@@ -35,3 +35,9 @@
     font-size: 12px;
     color: grey;
 }
+
+@media (max-width: 767px) {
+   .profileFooter {
+        display: none !important;
+    }
+}

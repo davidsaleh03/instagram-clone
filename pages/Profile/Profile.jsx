@@ -109,7 +109,7 @@ const Profile = () => {
         {activeIcon === 'tagged' && <YourTagged />}
       </div>
       <div className="footer__section">
-      <Footer />
+      <Footer classTop='profileFooter'/>
       </div>
     </div>
   );
