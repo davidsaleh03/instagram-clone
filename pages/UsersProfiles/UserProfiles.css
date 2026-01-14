@@ -16,3 +16,9 @@ margin-top: 12px;
 .profile__top--margin {
     margin-top: 12px;
 }
+
+.profile__page--sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
