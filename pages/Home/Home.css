@@ -257,3 +257,9 @@
         width: 100%;
     }
 }
+
+@media(max-width: 767px) {
+    .side__footer {
+        display: none !important;
+    }
+}

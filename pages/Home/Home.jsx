@@ -116,7 +116,7 @@ const Home = () => {
             }
         </div>
         <div className="side__footer">
-          <Footer classTop='profileFooter' />
+          <Footer classTop='profileFooter'/>
         </div>
       </div>
     </div>

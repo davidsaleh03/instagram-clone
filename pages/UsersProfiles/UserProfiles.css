@@ -23,3 +23,15 @@ margin-top: 12px;
     justify-content: center;
 }
 
+@media(max-width: 767px) {
+    .profileFooter {
+        display: none !important;
+    }
+}
+
+@media(max-width: 556px) {
+    .profile__top--figure {
+        margin-right: 10px;
+    }
+}
+
