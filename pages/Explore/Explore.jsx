@@ -8,6 +8,11 @@ import {
   user5,
   user6,
 } from "../../assets/user-data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHeart,
+  faComment,
+} from "@fortawesome/free-solid-svg-icons";
 import Footer from "../../components/Footer";
 
 const Explore = () => {
@@ -22,6 +27,22 @@ const Explore = () => {
             loop
             className="explore__reel--video"
           ></video>
+          <div className="explore__post--likecom">
+            <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+          </div>
         </figure>
         <div className="explore__section--posts">
           <figure className="explore__photo">
@@ -30,6 +51,22 @@ const Explore = () => {
               alt=""
               className="explore__photo--img"
             />
+            <div className="explore__post--likecom">
+              <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+            </div>
           </figure>
           <figure className="explore__photo">
             <img
@@ -37,6 +74,22 @@ const Explore = () => {
               alt=""
               className="explore__photo--img"
             />
+            <div className="explore__post--likecom">
+              <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+            </div>
           </figure>
           <figure className="explore__photo">
             <img
@@ -44,6 +97,22 @@ const Explore = () => {
               alt=""
               className="explore__photo--img"
             />
+            <div className="explore__post--likecom">
+              <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+            </div>
           </figure>
           <figure className="explore__photo">
             <img
@@ -51,6 +120,22 @@ const Explore = () => {
               alt=""
               className="explore__photo--img"
             />
+            <div className="explore__post--likecom">
+              <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+            </div>
           </figure>
         </div>
       </div>
@@ -62,6 +147,22 @@ const Explore = () => {
               alt=""
               className="explore__photo--img"
             />
+            <div className="explore__post--likecom">
+              <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+            </div>
           </figure>
           <figure className="explore__photo">
             <img
@@ -69,6 +170,22 @@ const Explore = () => {
               alt=""
               className="explore__photo--img"
             />
+            <div className="explore__post--likecom">
+              <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+            </div>
           </figure>
           <figure className="explore__photo">
             <img
@@ -76,6 +193,22 @@ const Explore = () => {
               alt=""
               className="explore__photo--img"
             />
+            <div className="explore__post--likecom">
+              <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+            </div>
           </figure>
           <figure className="explore__photo">
             <img
@@ -83,6 +216,22 @@ const Explore = () => {
               alt=""
               className="explore__photo--img"
             />
+            <div className="explore__post--likecom">
+              <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+            </div>
           </figure>
         </div>
         <figure className="explore__reel">
@@ -93,6 +242,22 @@ const Explore = () => {
             loop
             className="explore__reel--video"
           ></video>
+          <div className="explore__post--likecom">
+            <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+          </div>
         </figure>
       </div>
       <div className="explore__section">
@@ -104,6 +269,22 @@ const Explore = () => {
             loop
             className="explore__reel--video"
           ></video>
+          <div className="explore__post--likecom">
+            <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+          </div>
         </figure>
         <div className="explore__section--posts">
           <figure className="explore__photo">
@@ -112,6 +293,22 @@ const Explore = () => {
               alt=""
               className="explore__photo--img"
             />
+            <div className="explore__post--likecom">
+              <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+            </div>
           </figure>
           <figure className="explore__photo">
             <img
@@ -119,6 +316,22 @@ const Explore = () => {
               alt=""
               className="explore__photo--img"
             />
+            <div className="explore__post--likecom">
+              <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+            </div>
           </figure>
           <figure className="explore__photo">
             <img
@@ -126,6 +339,22 @@ const Explore = () => {
               alt=""
               className="explore__photo--img"
             />
+            <div className="explore__post--likecom">
+              <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+            </div>
           </figure>
           <figure className="explore__photo">
             <img
@@ -133,6 +362,22 @@ const Explore = () => {
               alt=""
               className="explore__photo--img"
             />
+            <div className="explore__post--likecom">
+              <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faHeart}
+                  />
+                  <h1>10</h1>
+                </div>
+                <div className="user__post--div">
+                  <FontAwesomeIcon
+                    className="user__post--icon"
+                    icon={faComment}
+                  />
+                  <h1>5</h1>
+                </div>
+            </div>
           </figure>
         </div>
       </div>
