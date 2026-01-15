@@ -26,6 +26,10 @@ body {
   background-color: black;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .sidebar-index{
   z-index: 2;
 }

@@ -257,11 +257,13 @@
     .reels {
         margin-left: 0px;
         margin-top: 56px;
+        overflow: hidden;
     }
 
     .reels__content {
         margin: 20px 0 120px 0;
     }
+
 }
 
 @media (max-width: 767px) {

@@ -10,7 +10,7 @@ import {
   faGear,
   faTableCells,
   faImagePortrait,
-  faAngleLeft
+  faAngleLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import YourPosts from "../../components/YourPosts";
@@ -22,43 +22,47 @@ import { Link } from "react-router-dom";
 const Profile = () => {
   const [activeIcon, setActiveIcon] = useState("posts");
   const [profileData, setProfileData] = useState(null);
-  
+
   useEffect(() => {
-  const unsub = onAuthStateChanged(auth, async (user) => {
-    if (!user) return;
+    const unsub = onAuthStateChanged(auth, async (user) => {
+      if (!user) return;
 
-    try {
-      const docRef = doc(db, "users", user.uid);
-      const docSnap = await getDoc(docRef);
-      if (docSnap.exists()) {
-        setProfileData(docSnap.data());
+      try {
+        const docRef = doc(db, "users", user.uid);
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+          setProfileData(docSnap.data());
+        }
+      } catch (error) {
+        console.error("Error fetching profile:", error);
       }
-    } catch (error) {
-      console.error("Error fetching profile:", error);
-    }
-  });
+    });
 
-  return () => unsub();
-}, []);
+    return () => unsub();
+  }, []);
   return (
     <div className="profile__page">
       <div className="top__small--bar">
-        <Link to='/' className="faAngleLeft-margin">
-        <FontAwesomeIcon className="faAngleLeft" icon={faAngleLeft} />
+        <Link to="/" className="faAngleLeft-margin">
+          <FontAwesomeIcon className="faAngleLeft" icon={faAngleLeft} />
         </Link>
         <h1 className="top__title">{profileData?.name || "Username"}</h1>
       </div>
-      <div className="profile__page--one">
-        <div className="profile__top">
+      <div className="profile__page--one your__page--one">
+        <div className="profile__top profile__top--2">
           <figure className="profile__top--figure">
             <img src={profile} alt="" className="profile__top--img" />
           </figure>
           <div className="profile__top--right">
             <div className="right__top">
               <h1>{profileData?.name || "Username"}</h1>
-              <h1 className="right__top--btn right__top--btn-2 cursor-no">Edit profile</h1>
-              <h1 className="right__top--btn right__top--btn-2 cursor-no">View archive</h1>
-              <FontAwesomeIcon className='cursor-no faGear-1' icon={faGear} />
+              <h1 className="right__top--btn right__top--btn-2 cursor-no">
+                Edit profile
+              </h1>
+              <h1 className="right__top--btn right__top--btn-2 cursor-no">
+                View archive
+              </h1>
+              <FontAwesomeIcon className="cursor-no faGear-1" icon={faGear} />
             </div>
             <div className="profile__middle">
               <h1>
@@ -73,10 +77,24 @@ const Profile = () => {
             </div>
             <div className="profile__bottom">
               <h1>{profileData?.username || "Name here"}</h1>
-              <FontAwesomeIcon className='cursor-no faGear-2' icon={faGear} />
+              <FontAwesomeIcon className="cursor-no faGear-2" icon={faGear} />
             </div>
           </div>
         </div>
+        <div className="your__middle--small">
+              <div className='your__middle-h1'>
+                <h1 className="your-bold">0</h1>
+                <h1>posts</h1>
+              </div>
+              <div className='your__middle-h1'>
+                <h1 className="your-bold">0</h1>
+                <h1>followers</h1>
+              </div>
+              <div className='your__middle-h1'>
+                <h1 className="your-bold">0</h1>
+                <h1>following</h1>
+              </div>  
+            </div>
       </div>
       <div className="profile__page--content">
         <div className="profile__page--icons">
@@ -97,7 +115,10 @@ const Profile = () => {
             }`}
             onClick={() => setActiveIcon("saved")}
           >
-            <FontAwesomeIcon className="profile__page--icon" icon={faBookmark}/>
+            <FontAwesomeIcon
+              className="profile__page--icon"
+              icon={faBookmark}
+            />
           </div>
           <div
             className={`icon__wrapper ${
@@ -113,12 +134,12 @@ const Profile = () => {
         </div>
       </div>
       <div className="profile__page--sections">
-        {activeIcon === 'posts' && <YourPosts />}
-        {activeIcon === 'saved' && <YourSaved />}
-        {activeIcon === 'tagged' && <YourTagged />}
+        {activeIcon === "posts" && <YourPosts />}
+        {activeIcon === "saved" && <YourSaved />}
+        {activeIcon === "tagged" && <YourTagged />}
       </div>
       <div className="footer__section">
-      <Footer classTop='profileFooter'/>
+        <Footer classTop="profileFooter" />
       </div>
     </div>
   );

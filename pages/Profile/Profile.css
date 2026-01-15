@@ -153,6 +153,11 @@ margin-right: 150px;
     display: none;
 }
 
+.your__middle--small {
+    display: none;
+}
+
+
 
 @media (max-width: 1159px) {
     .profile__page{
@@ -192,6 +197,49 @@ margin-right: 150px;
     .faGear-2 {
         display: flex;
     }
+     .your__middle--small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+  }
+
+  .your__middle--small:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    /* height: 1px; */
+    width: 100%;
+    border-top: 0.05px solid white;
+    opacity: 0.5;
+  }
+  .your__middle-h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .your__middle-h1 h1 {
+    font-weight: 200;
+    color: grey;
+    font-size: 20px;
+  }
+
+  .your-bold {
+    font-weight: 400;
+    color: white !important;
+  }
+
+  .profile__top--2 {
+    margin-bottom: 100px;
+  }
+
+  .your__page--one {
+    margin: 25px 0 0 0 !important;
+  }
 }
 
 @media(max-width: 767px) {
