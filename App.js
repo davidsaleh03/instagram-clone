@@ -18,7 +18,7 @@ function App() {
   const navigate = useNavigate()
   const location = useLocation()
   const hideSidebar = location.pathname === "/login"
-  const hideTopbar = location.pathname.startsWith("/profile")
+  const hideTopbar = location.pathname.startsWith("/profile") || location.pathname.startsWith("/login");
 
   useEffect(() =>{
     onAuthStateChanged(auth, async (user)=> {

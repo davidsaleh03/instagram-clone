@@ -19,7 +19,7 @@ const Explore = () => {
   return (
     <div className="Explore">
       <div className="explore__section">
-        <figure className="explore__reel">
+        <figure className="explore__reel cursor-option">
           <video
             src={user1.reels[0].reel}
             muted
@@ -45,7 +45,7 @@ const Explore = () => {
           </div>
         </figure>
         <div className="explore__section--posts">
-          <figure className="explore__photo">
+          <figure className="explore__photo cursor-option">
             <img
               src={user3.posts[0].image}
               alt=""
@@ -68,7 +68,7 @@ const Explore = () => {
                 </div>
             </div>
           </figure>
-          <figure className="explore__photo">
+          <figure className="explore__photo cursor-option">
             <img
               src={user4.posts[0].image}
               alt=""
@@ -91,7 +91,7 @@ const Explore = () => {
                 </div>
             </div>
           </figure>
-          <figure className="explore__photo">
+          <figure className="explore__photo cursor-option">
             <img
               src={user5.posts[0].image}
               alt=""
@@ -114,7 +114,7 @@ const Explore = () => {
                 </div>
             </div>
           </figure>
-          <figure className="explore__photo">
+          <figure className="explore__photo cursor-option">
             <img
               src={user3.posts[1].image}
               alt=""
@@ -141,7 +141,7 @@ const Explore = () => {
       </div>
       <div className="explore__section">
         <div className="explore__section--posts">
-          <figure className="explore__photo">
+          <figure className="explore__photo cursor-option">
             <img
               src={user1.posts[2].image}
               alt=""
@@ -164,7 +164,7 @@ const Explore = () => {
                 </div>
             </div>
           </figure>
-          <figure className="explore__photo">
+          <figure className="explore__photo cursor-option">
             <img
               src={user2.posts[2].image}
               alt=""
@@ -187,7 +187,7 @@ const Explore = () => {
                 </div>
             </div>
           </figure>
-          <figure className="explore__photo">
+          <figure className="explore__photo cursor-option">
             <img
               src={user6.posts[2].image}
               alt=""
@@ -210,7 +210,7 @@ const Explore = () => {
                 </div>
             </div>
           </figure>
-          <figure className="explore__photo">
+          <figure className="explore__photo cursor-option">
             <img
               src={user2.posts[3].image}
               alt=""
@@ -234,7 +234,7 @@ const Explore = () => {
             </div>
           </figure>
         </div>
-        <figure className="explore__reel">
+        <figure className="explore__reel cursor-option">
           <video
             src={user6.reels[0].reel}
             muted
@@ -261,7 +261,7 @@ const Explore = () => {
         </figure>
       </div>
       <div className="explore__section">
-        <figure className="explore__reel">
+        <figure className="explore__reel cursor-option">
           <video
             src={user3.reels[0].reel}
             muted
@@ -287,7 +287,7 @@ const Explore = () => {
           </div>
         </figure>
         <div className="explore__section--posts">
-          <figure className="explore__photo">
+          <figure className="explore__photo cursor-option">
             <img
               src={user1.posts[3].image}
               alt=""
@@ -310,7 +310,7 @@ const Explore = () => {
                 </div>
             </div>
           </figure>
-          <figure className="explore__photo">
+          <figure className="explore__photo cursor-option">
             <img
               src={user5.posts[5].image}
               alt=""
@@ -333,7 +333,7 @@ const Explore = () => {
                 </div>
             </div>
           </figure>
-          <figure className="explore__photo">
+          <figure className="explore__photo cursor-option">
             <img
               src={user4.posts[5].image}
               alt=""
@@ -356,7 +356,7 @@ const Explore = () => {
                 </div>
             </div>
           </figure>
-          <figure className="explore__photo">
+          <figure className="explore__photo cursor-option">
             <img
               src={user5.posts[4].image}
               alt=""
@@ -381,7 +381,7 @@ const Explore = () => {
           </figure>
         </div>
       </div>
-      <Footer />
+      <Footer classTwo='opacity'/>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import homeuser from "../assets/home-user";
 import profilePic from "../assets/healthy__img.jpg";
 import {
@@ -11,9 +11,23 @@ import {faEllipsis} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Reccomended.css'
 import image from '../assets/healthy__post.jpg'
+import CommentsModal from "./CommentsModal";
 
 const Reccomended = () => {
+  const [selectedPost, setSelectedPost] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  function openComments(post) {
+    setSelectedPost(post);
+    setIsModalOpen(true);
+  }
+
+  function closeComments() {
+    setSelectedPost(null);
+    setIsModalOpen(false);
+  }
   return (
+    <>
     <div className="reccomended">
         {
             homeuser.posts.map((post, index) => {
@@ -39,7 +53,7 @@ const Reccomended = () => {
           </div>
         </div>
         <figure className="post__pic">
-          <img src={image} alt="" className="post__img" />
+          <img src={post.poster} alt="" className="post__img" />
         </figure>
         <div className="post__bottom">
           <div className="bottom__top">
@@ -55,13 +69,17 @@ const Reccomended = () => {
           <div className="bottom__lower">
             <div className="lower__likes">10,000 likes</div>
             <div className="username__lower">{post.username}<span className="user-content">   {post.caption}</span></div>
-            <div className="lower__comments">View all 30,200 comments</div>
+            <div className="lower__comments cursor-option" onClick={()=> openComments(post)}>View all 10 comments</div>
           </div>
         </div>
       </div>
             })
         }
     </div>
+        {
+          isModalOpen && <CommentsModal post={selectedPost} onClose={closeComments} />
+        }
+    </>
   );
 };
 

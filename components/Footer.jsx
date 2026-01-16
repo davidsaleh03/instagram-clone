@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Footer.css"
 
-const Footer = ({classTop}) => {
+const Footer = ({classTop, classTwo}) => {
   return (
-    <div className={`footer ${classTop}`}>
-        <ul className="footer__list">
+    <div className={`footer ${classTop} ${classTwo}`}>
+        <ul className='footer__list'>
             <li className="footer__link">Meta</li>
             <li className="footer__link">About</li>
             <li className="footer__link">Blog</li>
@@ -21,7 +21,7 @@ const Footer = ({classTop}) => {
             <li className="footer__link">Contact Uploading & Non-Users</li>
             <li className="footer__link">Meta Verified</li>
         </ul>
-        <div className="copyright__section">
+        <div className= {`copyright__section ${classTwo}`}>
             <h2>© 2026 Instagram from Meta</h2>
         </div>
     </div>

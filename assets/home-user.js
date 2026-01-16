@@ -11,6 +11,12 @@ import reels3 from './daily.foodie.mp4'
 import reels4 from './study.smart.mp4'
 import reels5 from './wander.daily.mp4'
 import reels6 from './code.daily.mp4'
+import nutrition1 from './healthy__post.jpg'
+import inspiration1 from './inspiration1.jpg'
+import food1 from './food1.jpg'
+import wander1 from './wander1.jpg'
+import study1 from './study1.jpg'
+import code1 from './code1.jpg'
 
 const homeuser = {
     posts:[
@@ -19,6 +25,7 @@ const homeuser = {
       username: "daily_nutrition",
       name: 'Daily Nutrition',
       image: profile1,
+      poster: nutrition1,
       followers: '842',
       following: '180',
       caption: "Fuel your body with real food 🌱",
@@ -101,6 +108,7 @@ const homeuser = {
       id: 'user2',
       username: 'daily_inspiration',
       name: 'Daily Inspiration',
+      poster: inspiration1,
       image: profile2,
       followers: '693',
       following: '410',
@@ -185,6 +193,7 @@ const homeuser = {
       userId: 3,
       username: "daily_foodie",
       name: 'Daily Foodie',
+      poster: food1,
       image: profile3,
       followers: '356',
       following: '112',
@@ -269,10 +278,11 @@ const homeuser = {
       userId: 3,
       username: "study.smart",
       name: 'Study Smart',
+      poster: study1,
       image: profile4,
       followers: '918',
       following: '502',
-      caption: "Pizza makes everything better 🍕",
+      caption: "Consistency beats cramming 📖",
       likes: 4025,
       createdAt: "2025-12-07",
       comments: [
@@ -353,10 +363,11 @@ const homeuser = {
       userId: 4,
       username: "wander.daily",
       name: 'Wander Daily',
+      poster: wander1,
       image: profile5,
       followers: '642',
       following: '185',
-      caption: "Consistency beats cramming 📖",
+      caption: "Collect moments, not miles 🌄",
       likes: 1785,
       createdAt: "2025-12-01",
       comments: [
@@ -437,10 +448,11 @@ const homeuser = {
       userId: 5,
       username: "code.daily",
       name: 'Code Daily',
+      poster: code1,
       image: profile6,
       followers: '489',
       following: '97',
-      caption: "Collect moments, not miles 🌄",
+      caption: "Write code. Break things. Learn fast. 🧠",
       likes: 3250,
       createdAt: "2025-12-01",
       comments: [

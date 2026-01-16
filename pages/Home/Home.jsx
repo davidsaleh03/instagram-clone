@@ -11,6 +11,7 @@ import { doc, getDoc } from "firebase/firestore";
 import { onAuthStateChanged } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import CommentsModal from "../../components/CommentsModal.jsx";
 
 const Home = () => {
     const [profileData, setProfileData] = useState(null);
@@ -68,7 +69,7 @@ const Home = () => {
             <Reccomended />
           </div>
         </div>
-        <Footer />
+        <Footer classTop='profileFooter'/>
       </div>
       <div className="home-right">
         <div className="home__account">
@@ -116,7 +117,7 @@ const Home = () => {
             }
         </div>
         <div className="side__footer">
-          <Footer classTop='profileFooter'/>
+          <Footer />
         </div>
       </div>
     </div>
