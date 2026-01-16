@@ -75,10 +75,10 @@ const Reccomended = () => {
       </div>
             })
         }
-    </div>
         {
           isModalOpen && <CommentsModal post={selectedPost} onClose={closeComments} />
         }
+    </div>
     </>
   );
 };

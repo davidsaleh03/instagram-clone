@@ -1,42 +1,60 @@
-import React from 'react'
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX, faHeart } from "@fortawesome/free-solid-svg-icons";
+import profileImg from "../assets/profile.png";
+import './CommentsModal.css'
 
-const CommentsModal = ({post, onClose}) => {
+const CommentsModal = ({ post, onClose }) => {
   return (
-    <div className='CommentsModal'>
-        <figure className="modal__left--side">
-            <img src="" alt="" className="modal__left--img" />
+    <div className="comments__area--2">
+      <div className="comments__area--left">
+        <figure className="comment__area--figure">
+          <img src={post.poster} alt="" className="comment__area--img1" />
         </figure>
-        <div className="modal__right--side">
-            <div className="modal__right--details">
-                <div className="figure__modal--right">
-                    <img src={post.image} alt="" className="figure__modal--img2" />
-                </div>
-            </div>
-                {
-                    post.comments.map((comment, index) => {
-                        return <div className="comments__section" key={index}>
-                            <figure className="comment__area--left">
-                                <img src={comment.image} alt="" className="comment__left--img" />
-                            </figure>
-                            <div className="comment__area--right">
-                                <div className="comment__right--top">
-                                    <h1>{comment.username}</h1>
-                                    <h1>{comment.caption}</h1>
-                                </div>
-                                <div className="comment__right--middle">
-                                    <h1>{comment.likes}</h1>
-                                    <h1 className='cursor-no'>Reply</h1>
-                                </div>
-                                <div className="comment__right--bottom">
-                                    <h1 className='cursor-no'>View Replies</h1>
-                                </div>
-                            </div>
-                        </div>
-                    })
-                }
+      </div>
+      <div className="comments__area-right">
+        <div className="comments__area--top">
+          <figure className="comments__top--profile">
+            <img
+              src={post.image}
+              alt=""
+              className="comments__top--profileimg"
+              onClick={onClose}
+            />
+          </figure>
+          <div className="comments__username--follow">
+          <h1>{post.username}</h1>
+          <h1>•</h1>
+          <h1>Follow</h1>
+          </div>
         </div>
+        <div className="comments__area--middle1">
+        {post.comments.map((comment, index) => {
+          return (
+            <div className="comments__actual" key={index}>
+              <figure className="figure__profile--comments1">
+                <img
+                  src={profileImg}
+                  alt=""
+                  className="profile__commentsimg--1"
+                />
+              </figure>
+              <div className="comments1-middle">
+                <h1 className="comments1__username">{comment.username}</h1>
+                <h1 className="comments1__caption">{comment.text}</h1>
+                <div className="reply-1__section">
+                  <h1>30 likes</h1>
+                  <h1>Reply</h1>
+                </div>
+                <h1 className="view__more-1">View All Replies</h1>
+              </div>
+            </div>
+          );
+        })}
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default CommentsModal
+export default CommentsModal;

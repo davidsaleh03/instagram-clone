@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Reels.css";
 import video from "../../assets/study.smart.mp4";
 import homeuser from "../../assets/home-user";
@@ -17,6 +17,16 @@ import ReelsComments from "../../components/ReelsComments";
 import profileImg from "../../assets/profile.png";
 
 const Reels = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  function openComments() {
+    setIsModalOpen(true);
+  }
+
+  function closeComments() {
+    setIsModalOpen(false);
+  }
+  
   return (
     <div className="reels">
       <div className="reels__content">
@@ -62,7 +72,7 @@ const Reels = () => {
                 <div className="top__side--reel">
                 <FontAwesomeIcon className="reel__icon" icon={faHeart} />
                 <h1>14</h1>
-                <FontAwesomeIcon className="reel__icon" icon={faComment} />
+                <FontAwesomeIcon className="reel__icon cursor-option" onClick={openComments} icon={faComment} />
                 <h1>5</h1>
                 <FontAwesomeIcon className="reel__icon" icon={faPaperPlane} />
                 <FontAwesomeIcon className="reel__icon" icon={faBookmark} />
@@ -74,22 +84,13 @@ const Reels = () => {
                 </figure>
                 </>
               </div>
+              {
+                isModalOpen && (
               <div className="reel__comments">
-                <div className="comments__top">
-                <FontAwesomeIcon className="comment__icon" icon={faXmark} />
-                <h1>Comments</h1>
-                </div>
-                <div className="reels__comarea">
-                <ReelsComments comments={reel.comments} className='reels-comments'/>
-                </div>
-                <div className="comment__bottom--one">
-                    <figure className="add__profile">
-                        <img src={profileImg} alt="" className="add__img" />
-                    </figure>
-                    <h1>Add a comment...</h1>
-                    <FontAwesomeIcon icon={faFaceGrinBeam} />
-                </div>
+                <ReelsComments comments={reel.comments} close={closeComments} className='reels-comments'/>
               </div>
+                )
+              }
             </div>
           );
         })}

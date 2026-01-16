@@ -6,12 +6,20 @@ import {
   faComment,
   faPaperPlane,
   faBookmark,
+  faFaceGrinBeam
 } from "@fortawesome/free-regular-svg-icons";
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import profileImg from "../assets/profile.png";
 
-const ReelsComments = ({ comments }) => {
+const ReelsComments = ({ comments, close }) => {
   return (
-    <div className="comments__area">
+    <>
+    <div className="comments__top">
+                <FontAwesomeIcon className="comment__icon cursor-option" onClick={close} icon={faXmark} />
+                <h1>Comments</h1>
+                </div>
+                <div className="reels__comarea">
+                <div className="comments__area">
       {comments.map((comment, index) => {
         return (
           <div className="comments__actual" key={index}>
@@ -35,6 +43,15 @@ const ReelsComments = ({ comments }) => {
         );
       })}
     </div>
+                </div>
+                <div className="comment__bottom--one">
+                    <figure className="add__profile">
+                        <img src={profileImg} alt="" className="add__img" />
+                    </figure>
+                    <h1>Add a comment...</h1>
+                    <FontAwesomeIcon icon={faFaceGrinBeam} />
+                </div>
+    </>
   );
 };
 

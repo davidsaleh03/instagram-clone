@@ -3,6 +3,10 @@
     height: 694px;
 }
 
+.reccomended {
+    position: relative;
+}
+
 .post__top {
     display: flex;
     margin: 8px 12px 8px 16px;
