@@ -1,11 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faX, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faX } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faFaceGrinBeam } from "@fortawesome/free-regular-svg-icons";
 import profileImg from "../assets/profile.png";
 import './CommentsModal.css'
 
 const CommentsModal = ({ post, onClose }) => {
   return (
+    <div className="modal__overlay">
+
     <div className="comments__area--2">
       <div className="comments__area--left">
         <figure className="comment__area--figure">
@@ -25,13 +28,15 @@ const CommentsModal = ({ post, onClose }) => {
           <div className="comments__username--follow">
           <h1>{post.username}</h1>
           <h1>•</h1>
-          <h1>Follow</h1>
+          <h1 className='cursor-no'>Follow</h1>
+          <FontAwesomeIcon className="closeIcon cursor-option" onClick={onClose}icon={faX} />
           </div>
         </div>
         <div className="comments__area--middle1">
         {post.comments.map((comment, index) => {
           return (
-            <div className="comments__actual" key={index}>
+            <div className='comments__actual-2'>
+            <div className="comments__actual-1" key={index}>
               <figure className="figure__profile--comments1">
                 <img
                   src={profileImg}
@@ -49,10 +54,20 @@ const CommentsModal = ({ post, onClose }) => {
                 <h1 className="view__more-1">View All Replies</h1>
               </div>
             </div>
+            <FontAwesomeIcon className='comments__actual--icon' icon="fa-regular fa-heart" />
+            </div>
           );
         })}
         </div>
+        <div className="comment__bottom--one new-one">
+                    <figure className="add__profile">
+                        <img src={profileImg} alt="" className="add__img" />
+                    </figure>
+                    <h1 className='more-two'>Add a comment...</h1>
+                    <FontAwesomeIcon icon={faFaceGrinBeam} />
+                </div>
       </div>
+    </div>
     </div>
   );
 };

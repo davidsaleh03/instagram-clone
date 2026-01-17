@@ -17,14 +17,14 @@ import ReelsComments from "../../components/ReelsComments";
 import profileImg from "../../assets/profile.png";
 
 const Reels = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedReel, setSelectedReel] = useState(null)
 
-  function openComments() {
-    setIsModalOpen(true);
+  function openComments(reel) {
+    setSelectedReel(reel);
   }
 
   function closeComments() {
-    setIsModalOpen(false);
+    setSelectedReel(null);
   }
   
   return (
@@ -72,7 +72,7 @@ const Reels = () => {
                 <div className="top__side--reel">
                 <FontAwesomeIcon className="reel__icon" icon={faHeart} />
                 <h1>14</h1>
-                <FontAwesomeIcon className="reel__icon cursor-option" onClick={openComments} icon={faComment} />
+                <FontAwesomeIcon className="reel__icon cursor-option" onClick={() => openComments(reel)} icon={faComment} />
                 <h1>5</h1>
                 <FontAwesomeIcon className="reel__icon" icon={faPaperPlane} />
                 <FontAwesomeIcon className="reel__icon" icon={faBookmark} />
@@ -85,9 +85,9 @@ const Reels = () => {
                 </>
               </div>
               {
-                isModalOpen && (
+                selectedReel === reel && (
               <div className="reel__comments">
-                <ReelsComments comments={reel.comments} close={closeComments} className='reels-comments'/>
+                <ReelsComments reel={selectedReel} close={closeComments} className='reels-comments'/>
               </div>
                 )
               }

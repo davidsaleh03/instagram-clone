@@ -11,7 +11,7 @@ import {
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import profileImg from "../assets/profile.png";
 
-const ReelsComments = ({ comments, close }) => {
+const ReelsComments = ({ reel, close }) => {
   return (
     <>
     <div className="comments__top">
@@ -20,7 +20,7 @@ const ReelsComments = ({ comments, close }) => {
                 </div>
                 <div className="reels__comarea">
                 <div className="comments__area">
-      {comments.map((comment, index) => {
+      {reel.comments.map((comment, index) => {
         return (
           <div className="comments__actual" key={index}>
             <figure className="comment__profile">

@@ -13,19 +13,8 @@ import './Reccomended.css'
 import image from '../assets/healthy__post.jpg'
 import CommentsModal from "./CommentsModal";
 
-const Reccomended = () => {
-  const [selectedPost, setSelectedPost] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  function openComments(post) {
-    setSelectedPost(post);
-    setIsModalOpen(true);
-  }
-
-  function closeComments() {
-    setSelectedPost(null);
-    setIsModalOpen(false);
-  }
+const Reccomended = ({onOpenComments}) => {
+  
   return (
     <>
     <div className="reccomended">
@@ -69,14 +58,11 @@ const Reccomended = () => {
           <div className="bottom__lower">
             <div className="lower__likes">10,000 likes</div>
             <div className="username__lower">{post.username}<span className="user-content">   {post.caption}</span></div>
-            <div className="lower__comments cursor-option" onClick={()=> openComments(post)}>View all 10 comments</div>
+            <div className="lower__comments cursor-option" onClick={() => onOpenComments(post)}>View all 10 comments</div>
           </div>
         </div>
       </div>
             })
-        }
-        {
-          isModalOpen && <CommentsModal post={selectedPost} onClose={closeComments} />
         }
     </div>
     </>

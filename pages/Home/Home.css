@@ -10,6 +10,10 @@
     position: relative;
 }
 
+.no-see {
+    display: none;
+}
+
 .home-middle {
     width: 70%;
     display: flex;

@@ -15,7 +15,31 @@ import CommentsModal from "../../components/CommentsModal.jsx";
 
 const Home = () => {
     const [profileData, setProfileData] = useState(null);
-    
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedPost, setSelectedPost] = useState(null);    
+
+   function openComments(post) {
+  setSelectedPost(post);
+  setIsModalOpen(true);
+}
+
+function closeComments() {
+  setSelectedPost(null);
+  setIsModalOpen(false);
+}
+
+useEffect(() => {
+  if (isModalOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [isModalOpen]);
+
     useEffect(() => {
     const unsub = onAuthStateChanged(auth, async (user) => {
       if (!user) return;
@@ -66,7 +90,7 @@ const Home = () => {
             </div>
           </div>
           <div className="reccomended__post">
-            <Reccomended />
+            <Reccomended onOpenComments={openComments} onCloseComments={closeComments}/>
           </div>
         </div>
         <Footer classTop='profileFooter'/>
@@ -120,6 +144,9 @@ const Home = () => {
           <Footer />
         </div>
       </div>
+      {
+                isModalOpen && <CommentsModal post={selectedPost} onClose={closeComments} />
+              }
     </div>
   );
 };

@@ -201,77 +201,77 @@ const homeuser = {
       likes: 2840,
       createdAt: "2025-12-01",
       comments: [
-        {
-          id: 1001,
-          postId: 101,
-          username: "MuscleMama",
-          text: "Can’t argue with that! Protein shakes are basically my besties 🥤💪",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1002,
-          postId: 101,
-          username: "GainTrain",
-          text: "Leg day wouldn’t be the same without it 😎",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1003,
-          postId: 101,
-          username: "FitFuel",
-          text: "Eggs, chicken, beans… I love my protein squad 🍳🍗",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1004,
-          postId: 101,
-          username: "HealthyHarry",
-          text: "Preach! Protein keeps me full and energized all day 🔋",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1005,
-          postId: 101,
-          username: "StrongSnack",
-          text: "I keep protein bars in every bag—just in case 😅",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1006,
-          postId: 101,
-          username: "VeganPower",
-          text: "Plant protein is life too! Lentils and tofu represent 🌱",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1007,
-          postId: 101,
-          username: "ProteinQueen",
-          text: "Yes! Gains don’t happen without a little help from protein 💯",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1008,
-          postId: 101,
-          username: "GymBuddy88",
-          text: "Shoutout to protein shakes after heavy workouts 👊",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1009,
-          postId: 101,
-          username: "SmartEater",
-          text: "Honestly, it’s amazing how protein can turn a simple meal into a power meal 🍗🥚",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1010,
-          postId: 101,
-          username: "FuelUpFast",
-          text: "Protein isn’t just a friend—it’s family 💪😄",
-          createdAt: "2025-12-01",
-        },
-      ]
+    {
+      id: 3011,
+      postId: 301,
+      username: "foodie_vibes",
+      text: "This is 100% true 😍",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 3012,
+      postId: 301,
+      username: "happy_bites",
+      text: "Now I’m hungry AND happy 😂",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 3013,
+      postId: 301,
+      username: "taste_buds",
+      text: "Food really does fix everything 😋",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 3014,
+      postId: 301,
+      username: "comfort_cravings",
+      text: "Good mood guaranteed with meals like this 🙌",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 3015,
+      postId: 301,
+      username: "flavor_first",
+      text: "Eating well just hits different 🤤",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 3016,
+      postId: 301,
+      username: "snack_happy",
+      text: "My mood instantly improved just seeing this 😄",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 3017,
+      postId: 301,
+      username: "yum_daily",
+      text: "Proof that food is therapy 🍜",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 3018,
+      postId: 301,
+      username: "feel_good_eats",
+      text: "This plate = happiness 💛",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 3019,
+      postId: 301,
+      username: "food_mood",
+      text: "Good food really sets the tone for the day ✨",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 3020,
+      postId: 301,
+      username: "crave_culture",
+      text: "Saving this for food inspo 😋",
+      createdAt: "2025-12-01"
+    }
+  ]
     },
      {
       id: 'user4',
@@ -286,77 +286,77 @@ const homeuser = {
       likes: 4025,
       createdAt: "2025-12-07",
       comments: [
-        {
-          id: 1001,
-          postId: 101,
-          username: "MuscleMama",
-          text: "Can’t argue with that! Protein shakes are basically my besties 🥤💪",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1002,
-          postId: 101,
-          username: "GainTrain",
-          text: "Leg day wouldn’t be the same without it 😎",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1003,
-          postId: 101,
-          username: "FitFuel",
-          text: "Eggs, chicken, beans… I love my protein squad 🍳🍗",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1004,
-          postId: 101,
-          username: "HealthyHarry",
-          text: "Preach! Protein keeps me full and energized all day 🔋",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1005,
-          postId: 101,
-          username: "StrongSnack",
-          text: "I keep protein bars in every bag—just in case 😅",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1006,
-          postId: 101,
-          username: "VeganPower",
-          text: "Plant protein is life too! Lentils and tofu represent 🌱",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1007,
-          postId: 101,
-          username: "ProteinQueen",
-          text: "Yes! Gains don’t happen without a little help from protein 💯",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1008,
-          postId: 101,
-          username: "GymBuddy88",
-          text: "Shoutout to protein shakes after heavy workouts 👊",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1009,
-          postId: 101,
-          username: "SmartEater",
-          text: "Honestly, it’s amazing how protein can turn a simple meal into a power meal 🍗🥚",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1010,
-          postId: 101,
-          username: "FuelUpFast",
-          text: "Protein isn’t just a friend—it’s family 💪😄",
-          createdAt: "2025-12-01",
-        },
-      ]
+    {
+      id: 4011,
+      postId: 401,
+      username: "study_hustle",
+      text: "So true! Small daily wins add up 💪",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 4012,
+      postId: 401,
+      username: "focus_mode",
+      text: "Consistency over last-minute panic every time 📚✨",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 4013,
+      postId: 401,
+      username: "daily_grind",
+      text: "Needed this reminder today 🙏",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 4014,
+      postId: 401,
+      username: "organized_mind",
+      text: "Cramming never worked for me anyway 😅",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 4015,
+      postId: 401,
+      username: "study_vibes",
+      text: "Consistency is the secret sauce 🔑",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 4016,
+      postId: 401,
+      username: "plan_and_repeat",
+      text: "Daily progress > panic sessions 💡",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 4017,
+      postId: 401,
+      username: "mindful_learning",
+      text: "This hits different during exam season 📖💫",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 4018,
+      postId: 401,
+      username: "steady_focus",
+      text: "Consistency always wins in the long run 🌟",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 4019,
+      postId: 401,
+      username: "study_daily",
+      text: "Little by little, day by day 👏",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 4020,
+      postId: 401,
+      username: "learning_path",
+      text: "Cramming is stressful, consistency is peace 😌",
+      createdAt: "2025-12-01"
+    }
+  ]
     },
     {
       id: 'user5',
@@ -371,77 +371,77 @@ const homeuser = {
       likes: 1785,
       createdAt: "2025-12-01",
       comments: [
-        {
-          id: 1001,
-          postId: 101,
-          username: "MuscleMama",
-          text: "Can’t argue with that! Protein shakes are basically my besties 🥤💪",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1002,
-          postId: 101,
-          username: "GainTrain",
-          text: "Leg day wouldn’t be the same without it 😎",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1003,
-          postId: 101,
-          username: "FitFuel",
-          text: "Eggs, chicken, beans… I love my protein squad 🍳🍗",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1004,
-          postId: 101,
-          username: "HealthyHarry",
-          text: "Preach! Protein keeps me full and energized all day 🔋",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1005,
-          postId: 101,
-          username: "StrongSnack",
-          text: "I keep protein bars in every bag—just in case 😅",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1006,
-          postId: 101,
-          username: "VeganPower",
-          text: "Plant protein is life too! Lentils and tofu represent 🌱",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1007,
-          postId: 101,
-          username: "ProteinQueen",
-          text: "Yes! Gains don’t happen without a little help from protein 💯",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1008,
-          postId: 101,
-          username: "GymBuddy88",
-          text: "Shoutout to protein shakes after heavy workouts 👊",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1009,
-          postId: 101,
-          username: "SmartEater",
-          text: "Honestly, it’s amazing how protein can turn a simple meal into a power meal 🍗🥚",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1010,
-          postId: 101,
-          username: "FuelUpFast",
-          text: "Protein isn’t just a friend—it’s family 💪😄",
-          createdAt: "2025-12-01",
-        },
-      ]
+    {
+      id: 5011,
+      postId: 501,
+      username: "wanderlust_queen",
+      text: "Absolutely! Experiences over everything ✨",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 5012,
+      postId: 501,
+      username: "adventure_seeker",
+      text: "This is the vibe I live for 🌄💛",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 5013,
+      postId: 501,
+      username: "travel_junkie",
+      text: "Moments > miles, always 😍",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 5014,
+      postId: 501,
+      username: "explore_everywhere",
+      text: "Living for these kinds of memories 🙌",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 5015,
+      postId: 501,
+      username: "sunset_chaser",
+      text: "Moments like these are priceless 🌅",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 5016,
+      postId: 501,
+      username: "journey_junkie",
+      text: "Collecting memories one adventure at a time ✨",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 5017,
+      postId: 501,
+      username: "mountain_moments",
+      text: "This makes me want to pack my bags now 😍",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 5018,
+      postId: 501,
+      username: "nature_addict",
+      text: "Exactly, experiences over destinations 🌿",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 5019,
+      postId: 501,
+      username: "traveler_soul",
+      text: "Memories last forever ✨🌄",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 5020,
+      postId: 501,
+      username: "sunset_seekers",
+      text: "This post speaks to my soul 🌅💛",
+      createdAt: "2025-12-01"
+    }
+  ]
     },
     {
       id: 'user6',
@@ -456,77 +456,77 @@ const homeuser = {
       likes: 3250,
       createdAt: "2025-12-01",
       comments: [
-        {
-          id: 1001,
-          postId: 101,
-          username: "MuscleMama",
-          text: "Can’t argue with that! Protein shakes are basically my besties 🥤💪",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1002,
-          postId: 101,
-          username: "GainTrain",
-          text: "Leg day wouldn’t be the same without it 😎",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1003,
-          postId: 101,
-          username: "FitFuel",
-          text: "Eggs, chicken, beans… I love my protein squad 🍳🍗",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1004,
-          postId: 101,
-          username: "HealthyHarry",
-          text: "Preach! Protein keeps me full and energized all day 🔋",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1005,
-          postId: 101,
-          username: "StrongSnack",
-          text: "I keep protein bars in every bag—just in case 😅",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1006,
-          postId: 101,
-          username: "VeganPower",
-          text: "Plant protein is life too! Lentils and tofu represent 🌱",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1007,
-          postId: 101,
-          username: "ProteinQueen",
-          text: "Yes! Gains don’t happen without a little help from protein 💯",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1008,
-          postId: 101,
-          username: "GymBuddy88",
-          text: "Shoutout to protein shakes after heavy workouts 👊",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1009,
-          postId: 101,
-          username: "SmartEater",
-          text: "Honestly, it’s amazing how protein can turn a simple meal into a power meal 🍗🥚",
-          createdAt: "2025-12-01",
-        },
-        {
-          id: 1010,
-          postId: 101,
-          username: "FuelUpFast",
-          text: "Protein isn’t just a friend—it’s family 💪😄",
-          createdAt: "2025-12-01",
-        },
-      ]
+    {
+      id: 6011,
+      postId: 601,
+      username: "dev_guru",
+      text: "Truth! Nothing teaches faster than a bug 😅💡",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 6012,
+      postId: 601,
+      username: "code_ninja",
+      text: "Breaking things = learning things 👏🧠",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 6013,
+      postId: 601,
+      username: "debug_master",
+      text: "Every crash is just a lesson in disguise 💻✨",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 6014,
+      postId: 601,
+      username: "stack_overflower",
+      text: "Love this mindset for developers 🙌",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 6015,
+      postId: 601,
+      username: "hack_the_planet",
+      text: "Break. Fix. Repeat. The cycle of growth 🔄💡",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 6016,
+      postId: 601,
+      username: "code_crusher",
+      text: "Learning fast is the only way to level up 🚀",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 6017,
+      postId: 601,
+      username: "dev_daily",
+      text: "The best devs aren’t afraid to break stuff 😎",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 6018,
+      postId: 601,
+      username: "fullstack_fan",
+      text: "Crashes today, features tomorrow ✨💻",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 6019,
+      postId: 601,
+      username: "coding_junkie",
+      text: "Every bug is just another lesson 🧠💡",
+      createdAt: "2025-12-01"
+    },
+    {
+      id: 6020,
+      postId: 601,
+      username: "tech_savant",
+      text: "Write code, break stuff, grow faster 🚀",
+      createdAt: "2025-12-01"
+    }
+  ]
     }
     ],
     reels: [
