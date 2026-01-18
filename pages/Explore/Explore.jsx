@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Explore.css";
 import {
   user1,
@@ -42,6 +42,18 @@ const Explore = () => {
     setIsReelOpen(false);
     setSelectedReel(null);
   }
+
+  useEffect(() => {
+    if (isModalOpen || isReelOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isModalOpen, isReelOpen]);
 
   return (
     <div className="Explore">

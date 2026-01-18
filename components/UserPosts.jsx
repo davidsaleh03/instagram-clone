@@ -10,7 +10,7 @@ import "./UserPosts.css";
 
 const usersMap = { user1, user2, user3, user4, user5, user6 };
 
-const UserPosts = ({ onActive, uid, onOpenComments }) => {
+const UserPosts = ({ onActive, uid, onOpenComments, onOpenReel }) => {
   const user = usersMap[uid];
   if (onActive === "posts") {
     return (
@@ -45,7 +45,7 @@ const UserPosts = ({ onActive, uid, onOpenComments }) => {
       <div className="user__reels--section">
         {user.reels.map((reels, index) => {
           return (
-            <div className="user__reel--section" key={index}>
+            <div className="user__reel--section" key={index} onClick={()=> onOpenReel(reels)}>
               <div className="user__reel--figure">
                 <video
                   muted

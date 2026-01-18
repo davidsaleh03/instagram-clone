@@ -181,6 +181,18 @@
     display: none;
 }
 
+.comment__area--figure2 {
+    width: 310px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment__area--video2 {
+    width: 100%;
+}
+
 @media (max-width: 767px) {
     .comments__area--2 {
         width: 400px;
@@ -223,5 +235,8 @@
     .comments__area--top::after {
         width: 130%;
         left: 0;
+    }
+    .comment__area--figure2 {
+        width: 230px;
     }
 }

@@ -16,6 +16,7 @@ import homeuser from '../../assets/home-user.js'
 import { Link, useParams } from 'react-router-dom';
 import UserPosts from '../../components/UserPosts.jsx';
 import CommentsModal from '../../components/CommentsModal.jsx';
+import ReelModal from '../../components/ReelModal.jsx';
 
 const UsersProfiles = () => {
     const [activeIcon, setActiveIcon] = useState("posts");
@@ -28,7 +29,9 @@ const UsersProfiles = () => {
 
    const [profileData, setProfileData] = useState(null);
       const [isModalOpen, setIsModalOpen] = useState(false);
-      const [selectedPost, setSelectedPost] = useState(null);    
+      const [selectedPost, setSelectedPost] = useState(null);   
+      const [isReelOpen, setIsReelOpen] = useState(false);
+      const [selectedReel, setSelectedReel] = useState(null);   
   
      function openComments(post) {
     setSelectedPost(post);
@@ -38,6 +41,16 @@ const UsersProfiles = () => {
   function closeComments() {
     setSelectedPost(null);
     setIsModalOpen(false);
+  }
+
+  function openReel(reel) {
+    setIsReelOpen(true);
+    setSelectedReel(reel)
+  }
+
+  function closeReel() {
+    setIsReelOpen(false);
+    setSelectedReel(null);
   }
   
   useEffect(() => {
@@ -140,7 +153,7 @@ const UsersProfiles = () => {
       </div>
       <div className="profile__page--sections">
       {activeIcon === "posts" && <UserPosts onOpenComments={openComments} uid={user.id} onActive='posts'/>}
-      {activeIcon === "saved" && <UserPosts uid={user.id} onActive='saved'/>}
+      {activeIcon === "saved" && <UserPosts onOpenReel={openReel} uid={user.id} onActive='saved'/>}
       {activeIcon === "tagged" && <UserPosts uid={user.id} onActive='tagged'/>}
       </div>
       <div className="footer__section">
@@ -148,6 +161,9 @@ const UsersProfiles = () => {
       </div>
       {
                 isModalOpen && <CommentsModal post={selectedPost} onClose={closeComments} />
+              }
+      {
+                isReelOpen && <ReelModal reels={selectedReel} onClose={closeReel} />
               }
     </div>
   );

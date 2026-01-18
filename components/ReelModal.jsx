@@ -12,8 +12,10 @@ const ReelModal = ({reels, onClose}) => {
 
     <div className="comments__area--2">
       <div className="comments__area--left">
-        <figure className="comment__area--figure1">
-            <video src={reels.reel} className="comment__area--video1"></video>
+        <figure className="comment__area--figure2">
+            <video src={reels.reel} muted
+            autoPlay
+            loop className="comment__area--video2"></video>
         </figure>
       </div>
       <div className="comments__area-right">
