@@ -23,7 +23,7 @@ const Reccomended = ({onOpenComments}) => {
                 return <div className="post" key={index}>
         <div className="post__top">
           <figure className="profile__pic--1">
-            <img src={post.image} alt="" className="profile__img--1" />
+            <img src={post.image2} alt="" className="profile__img--1" />
           </figure>
           <div className="top__description">
             <div className="top__top">
@@ -48,7 +48,7 @@ const Reccomended = ({onOpenComments}) => {
           <div className="bottom__top">
             <div className="bottom-left">
               <FontAwesomeIcon className="post__icon icon-left" icon={faHeart} />
-              <FontAwesomeIcon className="post__icon icon-left" icon={faComment} />
+              <FontAwesomeIcon className="post__icon icon-left cursor-option" onClick={() => onOpenComments(post)} icon={faComment} />
               <FontAwesomeIcon className="post__icon icon-left" icon={faPaperPlane} />
             </div>
             <div className="bottom-right">

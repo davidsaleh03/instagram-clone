@@ -73,7 +73,7 @@ useEffect(() => {
                 <div className="top--section">
                   <Link to={`/profile/${post.username}`}>
                   <figure className="profile__story">
-                    <img src={post.image} alt="" className="profile__story--img" />
+                    <img src={post.image2} alt="" className="profile__story--img" />
                   </figure>
                   </Link>
                   <Link to={`/profile/${post.username}`}>
@@ -123,7 +123,7 @@ useEffect(() => {
             <div className="pic__name--container">
               <Link to={`/profile/${user.username}`}>
               <figure className="profile__figure--sugg">
-                <img src={user.image} alt="" className="profile__img--sugg" />
+                <img src={user.image2} alt="" className="profile__img--sugg" />
               </figure>
               </Link>
               <div className="users-name-one">

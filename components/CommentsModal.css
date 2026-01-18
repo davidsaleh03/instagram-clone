@@ -213,9 +213,15 @@
         position: absolute;
         top: 0;
         margin-left: 0;
+        padding-left: 8px;
     }
     .comment__area--figure {
         width: 400px;
         height: 400px;
+
+    }
+    .comments__area--top::after {
+        width: 130%;
+        left: 0;
     }
 }

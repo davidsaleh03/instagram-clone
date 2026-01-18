@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './UserProfiles.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
@@ -15,6 +15,7 @@ import Footer from '../../components/Footer';
 import homeuser from '../../assets/home-user.js'
 import { Link, useParams } from 'react-router-dom';
 import UserPosts from '../../components/UserPosts.jsx';
+import CommentsModal from '../../components/CommentsModal.jsx';
 
 const UsersProfiles = () => {
     const [activeIcon, setActiveIcon] = useState("posts");
@@ -24,6 +25,33 @@ const UsersProfiles = () => {
     (post) => post.username === username
   );
   const user = userPost[0];
+
+   const [profileData, setProfileData] = useState(null);
+      const [isModalOpen, setIsModalOpen] = useState(false);
+      const [selectedPost, setSelectedPost] = useState(null);    
+  
+     function openComments(post) {
+    setSelectedPost(post);
+    setIsModalOpen(true);
+  }
+  
+  function closeComments() {
+    setSelectedPost(null);
+    setIsModalOpen(false);
+  }
+  
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isModalOpen]);
+
   return (
     <div className="profile__page">
       <div className="top__small--bar">
@@ -35,7 +63,7 @@ const UsersProfiles = () => {
       <div className="profile__page--one">
         <div className="profile__top">
           <figure className="profile__top--figure">
-            <img src={user.image} alt="" className="profile__top--img" />
+            <img src={user.image2} alt="" className="profile__top--img" />
           </figure>
           <div className="profile__top--right profile__top--margin">
             <div className="right__top">
@@ -111,13 +139,16 @@ const UsersProfiles = () => {
         </div>
       </div>
       <div className="profile__page--sections">
-      {activeIcon === "posts" && <UserPosts uid={user.id} onActive='posts'/>}
+      {activeIcon === "posts" && <UserPosts onOpenComments={openComments} uid={user.id} onActive='posts'/>}
       {activeIcon === "saved" && <UserPosts uid={user.id} onActive='saved'/>}
       {activeIcon === "tagged" && <UserPosts uid={user.id} onActive='tagged'/>}
       </div>
       <div className="footer__section">
       <Footer classTop='profileFooter'/>
       </div>
+      {
+                isModalOpen && <CommentsModal post={selectedPost} onClose={closeComments} />
+              }
     </div>
   );
 }

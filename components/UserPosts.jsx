@@ -10,14 +10,14 @@ import "./UserPosts.css";
 
 const usersMap = { user1, user2, user3, user4, user5, user6 };
 
-const UserPosts = ({ onActive, uid }) => {
+const UserPosts = ({ onActive, uid, onOpenComments }) => {
   const user = usersMap[uid];
   if (onActive === "posts") {
     return (
       <div className="user-posts">
         {user.posts.map((post, index) => {
           return (
-            <div className="user-post" key={index}>
+            <div className="user-post cursor-option" onClick={() => onOpenComments(post)} key={index}>
               <img src={post.image} alt="" className="user-post-img" />
               <div className="user__post--icons">
                 <div className="user__post--div">

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { faHeart, faFaceGrinBeam } from "@fortawesome/free-regular-svg-icons";
@@ -6,22 +6,22 @@ import profileImg from "../assets/profile.png";
 import './CommentsModal.css'
 import { Link } from "react-router-dom";
 
-const CommentsModal = ({ post, onClose }) => {
+const ReelModal = ({reels, onClose}) => {
   return (
-    <div className="modal__overlay">
+     <div className="modal__overlay">
 
     <div className="comments__area--2">
       <div className="comments__area--left">
-        <figure className="comment__area--figure">
-          <img src={post.poster} alt="" className="comment__area--img1" />
+        <figure className="comment__area--figure1">
+            <video src={reels.reel} className="comment__area--video1"></video>
         </figure>
       </div>
       <div className="comments__area-right">
         <div className="comments__area--top">
-            <Link to={`/profile/${post.username}`}>
+            <Link to={`/profile/${reels.username}`}>
           <figure className="comments__top--profile">
             <img
-              src={post.image2}
+              src={reels.image}
               alt=""
               className="comments__top--profileimg"
               onClick={onClose}
@@ -29,8 +29,8 @@ const CommentsModal = ({ post, onClose }) => {
           </figure>
             </Link>
           <div className="comments__username--follow">
-            <Link to={`/profile/${post.username}`}>
-          <h1>{post.username}</h1>
+            <Link to={`/profile/${reels.username}`}>
+          <h1>{reels.username}</h1>
             </Link>
           <h1>•</h1>
           <h1 className='cursor-no'>Follow</h1>
@@ -38,7 +38,7 @@ const CommentsModal = ({ post, onClose }) => {
           </div>
         </div>
         <div className="comments__area--middle1">
-        {post.comments.map((comment, index) => {
+        {reels.comments.map((comment, index) => {
           return (
             <div className='comments__actual-2' key={index}>
             <div className="comments__actual-1" >
@@ -74,7 +74,7 @@ const CommentsModal = ({ post, onClose }) => {
       </div>
     </div>
     </div>
-  );
-};
+  )
+}
 
-export default CommentsModal;
+export default ReelModal

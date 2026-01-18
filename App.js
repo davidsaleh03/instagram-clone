@@ -20,6 +20,12 @@ function App() {
   const hideSidebar = location.pathname === "/login"
   const hideTopbar = location.pathname.startsWith("/profile") || location.pathname.startsWith("/login");
 
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   useEffect(() =>{
     onAuthStateChanged(auth, async (user)=> {
       if(user) {
