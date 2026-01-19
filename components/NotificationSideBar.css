@@ -1,0 +1,123 @@
+.NotificationSideBar {
+    position: fixed;
+    top: 0;
+    left: 260px;
+    height: 100vh;
+    width: 360px;
+    border-right: 0.09px solid rgba(255, 255, 255, 0.2);
+    z-index: 99;
+    padding: 0 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: slideIn 0.3s ease forwards;
+    background: radial-gradient(
+    circle at center,
+    #1a1c22 0%,
+    #12141a 45%,
+    #0f1115 70%,
+    #0b0d10 100%
+  );
+  padding-bottom: 44px;
+}
+
+.notify__side--top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.notify__side--top h1 {
+    font-size: 24px;
+}
+
+.notify__suggested--accounts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sugg--left2 {
+    width: 100% !important;
+}
+
+.notify-icon {
+    font-size: 64px;
+    
+}
+
+.middle__notify {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.middle__notify--modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle__notify--modal h1 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.middle__notify--modal h1:nth-child(2) {
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.middle__notify--modal h1:nth-child(3) {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.607);
+    width: 275px;
+}
+
+.notify__h1 {
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 36px;
+}
+
+.notify__h1::after {
+    position: absolute;
+    content: " ";
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    bottom: -12px;
+    left: -30px;
+    width: 140%;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1159px) {
+  .NotificationSideBar {
+    left: 98px; 
+  }
+}
+
+@media (max-width: 767px) {
+  .NotificationSideBar {
+    display: none;
+  }
+}
+

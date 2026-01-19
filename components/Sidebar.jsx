@@ -14,14 +14,21 @@ import logoImg from "../assets/instagram-logo.png";
 import profile from "../assets/profile.png";
 import "./Sidebar.css";
 import logoSmall from "../assets/instaicon.png";
-import React from "react";
+import React, { useState } from "react";
 import { logout } from "../firebase";
 import { Link } from "react-router-dom";
+import NotificationSideBar from "./NotificationSideBar";
 
 function Sidebar() {
+  const [modalOpen, isModalOpen] = useState(false);
+
+function openLikes() {
+  isModalOpen(prev => !prev);
+}
+
   return (
     <>
-      <div className="sidebar">
+      <div id='sidebar-width' className="sidebar">
         <figure className="img__logo">
           <img src={logoImg} alt="" className="insta__logo" />
         </figure>
@@ -58,7 +65,7 @@ function Sidebar() {
             </li>
           </Link>
           <li className="side__link">
-            <FontAwesomeIcon icon={faHeart} className="side__icon" />
+            <FontAwesomeIcon icon={faHeart} onClick={openLikes} className="side__icon" />
             <h1>Notifications</h1>
           </li>
           <li className="side__link no-cursor">
@@ -127,6 +134,9 @@ function Sidebar() {
           </Link>
         </ul>
       </div>
+      {
+        modalOpen && <NotificationSideBar closeModal={openLikes}/>
+      }
     </>
   );
 }

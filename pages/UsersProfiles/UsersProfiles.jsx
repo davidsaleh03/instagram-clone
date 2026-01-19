@@ -54,7 +54,7 @@ const UsersProfiles = () => {
   }
   
   useEffect(() => {
-    if (isModalOpen) {
+    if (isModalOpen || isReelOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
@@ -63,7 +63,7 @@ const UsersProfiles = () => {
     return () => {
       document.body.style.overflow = "auto";
     };
-  }, [isModalOpen]);
+  }, [isModalOpen, isReelOpen]);
 
   return (
     <div className="profile__page">
