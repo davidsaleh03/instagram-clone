@@ -10,6 +10,15 @@
   z-index: 100;
   margin-right: 260px;
   border-right: 0.09px solid rgba(255, 255, 255, 0.397);
+  background: linear-gradient(
+  180deg,
+  #ffffff 0%,
+  #fafafa 100%
+);
+}
+
+.dark-theme .sidebar {
+  border-right: 0.09px solid rgba(255, 255, 255, 0.397);
   background: radial-gradient(
     circle at center,
     #1a1c22 0%,
@@ -30,6 +39,15 @@
   position: fixed;
   overflow: hidden;
   z-index: 100;
+  border-top: 0.09px solid rgba(255, 255, 255, 0.397);
+  background: linear-gradient(
+  180deg,
+  #ffffff 0%,
+  #fafafa 100%
+);
+}
+
+.dark-theme .sidebar-bottom {
   border-top: 0.09px solid rgba(255, 255, 255, 0.397);
   background: radial-gradient(
     circle at center,
@@ -66,15 +84,26 @@
 
 .insta__logo {
   width: 100%;
-  filter: invert(1);
+  filter: invert(0);
+}
+
+.dark-theme .insta__logo {
+  filter: invert(1); 
 }
 
 .side__icon {
   font-size: 22px;
   color: white;
+  filter: invert(1); 
   margin-right: 8px;
   z-index: 2;
 }
+
+.dark-theme .side__icon {
+  color: white;
+  filter: invert(0);
+}
+
 .profile__pic {
   display: flex;
   justify-content: center;
@@ -95,9 +124,14 @@
 .side__link h1,
 .bottom__link h1 {
   font-size: 18px;
-  color: white;
+  color: #242424;
   font-weight: 400;
   z-index: 2;
+}
+
+.dark-theme .side__link h1,
+.dark-theme .bottom__link h1 {
+  color: white;
 }
 
 .bottom__link {
@@ -127,7 +161,11 @@
 
 .insta__logo--small {
   width: 100%;
-  filter: invert(1);
+  filter: invert(0);
+}
+
+.dark-theme .insta__logo--small {
+ filter: invert(1);
 }
 
 .side__link {
@@ -148,6 +186,11 @@
   background-color: rgba(125, 123, 123, 0.092);
   border-radius: 8px;
   z-index: 1;
+}
+
+.dark-theme .side__link:hover,
+.dark-theme .bottom__link:hover {
+  background-color: rgba(125, 123, 123, 0.092);
 }
 
 @media (max-width: 1159px) {

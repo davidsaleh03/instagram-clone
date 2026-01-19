@@ -7,11 +7,15 @@ form {
 
 input {
     width: 250px;
-    border: 1px solid rgb(177, 177, 177);
+    border: 1px solid rgb(97, 97, 97);
     background-color: grey;
     border-radius: 4px;
     padding: 10px 8px;
     margin-bottom: 8px;
+}
+
+.dark-theme input {
+    border: 1px solid rgb(177, 177, 177);
 }
 
 input::placeholder {
@@ -35,7 +39,11 @@ button {
     margin: 24px 0 32px 0;
     font-size: 14px;
     opacity: 0.8;
-    color: white;
+    color: #242424;
+}
+
+.dark-theme .more__text {
+    color: #242424;
 }
 
 .more__text::before,
@@ -43,9 +51,14 @@ button {
     content: "";
     /* height: 1px; */
     width: 100px;
-    border-bottom: 0.05px solid white;
+    border-bottom: 0.05px solid #242424;
     margin: 0 14px;
     opacity: 0.5;
+}
+
+.dark-theme .more__text::before,
+.dark-theme .more__text::after {
+    border-bottom: 0.05px solid white;
 }
 
 .other__options {
@@ -78,8 +91,13 @@ button {
 
 .forgot,
 .create__option {
-    color: white;
+    color: #242424;
     font-size: 14px;
+}
+
+.dark-theme .forgot,
+.dark-theme .create__option {
+    color: white;
 }
 
 .forgot,

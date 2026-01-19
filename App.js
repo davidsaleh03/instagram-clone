@@ -21,6 +21,16 @@ function App() {
   const hideTopbar = location.pathname.startsWith("/profile") || location.pathname.startsWith("/login");
 
   const { pathname } = useLocation();
+  let contrastToggle = false;
+  function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -40,10 +50,10 @@ function App() {
   return (
     <div className="App">
         {!hideTopbar && <Topbar />}
-        {!hideSidebar && <Sidebar />}
+        {!hideSidebar && <Sidebar colorChange={toggleContrast}/>}
         <Routes>
           <Route path='/' element={<Home />} className="home-index" />
-          <Route path='/login' element={<Login />}/>
+          <Route path='/login' element={<Login colorChange={toggleContrast}/>}/>
           <Route path='/explore' element={<Explore />} />
           <Route path='/reels' element={<Reels />} />
           <Route path='/messages' element={<Messages />} />

@@ -46,7 +46,7 @@ const SignIn = () => {
         </form>
         <div className="more__text">OR</div>
         <div className="other__options text__2">
-          <FontAwesomeIcon icon={faFacebook} className="facebook-icon" />
+          <FontAwesomeIcon icon={faFacebook}  className="facebook-icon" />
           <h2 className="facebook__text">Sign up with Facebook</h2>
         </div>
         <h2 className="create__option">

@@ -8,6 +8,20 @@
     /* color: white; */
 }
 
+.contrast-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    filter: invert(1);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.dark-theme .contrast-icon {
+    filter: invert(0);
+}
+
 .login__container {
     /* width: 100%; */
     margin-top: 100px;
@@ -17,6 +31,10 @@
 }
 
 .logo__img {
+    filter: invert(0);
+}
+
+.dark-theme .logo__img {
     filter: invert(1);
 }
 
@@ -51,6 +69,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
+    position: relative;
 }
 
 .login {
@@ -59,14 +78,22 @@
 }
 
 .login-page {
-    background: radial-gradient(
+background: linear-gradient(
+  180deg,
+  #ffffff 0%,
+  #fafafa 100%
+);
+
+}
+
+.dark-theme .login-page {
+   background: radial-gradient(
   circle at center,
   #1c1c1e 0%,      
   #17171a 40%,  
   #121214 70%,    
   #0d0d0f 100%   
-);
-
+); 
 }
 
 @media (max-width: 945px) {

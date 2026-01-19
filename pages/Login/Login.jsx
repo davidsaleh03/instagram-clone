@@ -1,4 +1,7 @@
 import React from "react";
+import {
+  faCircleHalfStroke
+} from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import "./Login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,10 +10,11 @@ import logoImg from "../../assets/instagram-logo.png";
 import SignIn from "../../components/SignIn";
 import Footer from "../../components/Footer";
 
-const Login = () => {
+const Login = ({colorChange}) => {
 
   return (
     <div className='login-page'>
+      <FontAwesomeIcon className='contrast-icon' icon={faCircleHalfStroke} onClick={colorChange} />
     <div className="login">
       <div className="login__container">
         <div className="login__style">

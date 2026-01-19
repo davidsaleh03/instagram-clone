@@ -8,6 +8,7 @@ import {
   faMagnifyingGlass,
   faPaperPlane,
   faPlus,
+  faArrowRightFromBracket
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logoImg from "../assets/instagram-logo.png";
@@ -19,7 +20,7 @@ import { logout } from "../firebase";
 import { Link } from "react-router-dom";
 import NotificationSideBar from "./NotificationSideBar";
 
-function Sidebar() {
+function Sidebar({colorChange}) {
   const [modalOpen, isModalOpen] = useState(false);
 
 function openLikes() {
@@ -84,14 +85,14 @@ function openLikes() {
         <ul className="side__bottom">
           <Link to="/profile/daily_nutrition">
             <li className="bottom__link">
-              <FontAwesomeIcon icon={faBars} className="side__icon" />
-              <h1>More</h1>
+              <FontAwesomeIcon icon={faArrowRightFromBracket} onClick={logout} className="side__icon" />
+              <h1>Logout</h1>
             </li>
           </Link>
-          <li className="bottom__link">
+          <li className="bottom__link cursor-option">
             <FontAwesomeIcon
               icon={faCircleHalfStroke}
-              onClick={logout}
+              onClick={colorChange}
               className="side__icon"
             />
             <h1>Display</h1>
