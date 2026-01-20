@@ -1,7 +1,5 @@
 
-* {
-    color: white;
-}
+
 
 .home {
     display: flex;
@@ -57,6 +55,11 @@
 }
 .users-name-one h1 {
     font-size: 16px;
+    color: #242424;
+}
+
+.dark-theme .users-name-one h1 {
+    color: white;
 }
 
 .users-name-one h1:nth-child(2) {
@@ -71,6 +74,10 @@
     width: 44px;
     height: 44px;
     margin-right: 8px;
+}
+
+.dark-theme .profile__figure--sugg {
+    border: 0.7px solid rgb(221, 218, 218);
 }
 
 .profile__img--sugg {
@@ -97,12 +104,30 @@
 .follow__btn {
     font-size: 14px;
     font-weight: bold;
+    color: #4F5BFF;
+}
+
+.follow__btn {
+    cursor: not-allowed;
+}
+
+.dark-theme .home__logout,
+.dark-theme .follow__btn {
     color: rgba(133, 161, 255, 1);
 }
 
 .home__suggested h1:nth-child(1) {
     color: lightslategrey;
     font-weight: 400;
+}
+
+.home__suggested h1:nth-child(2) {
+    color: #242424;
+    cursor: not-allowed;
+}
+
+.dark-theme .home__suggested h1:nth-child(2) {
+    color: white;
 }
 
 .sugg--left {
@@ -158,6 +183,16 @@
     margin-bottom: 8px;
 }
 
+.stories__username,
+.username__descr {
+    color: #242424;
+}
+
+.dark-theme .stories__username,
+.dark-theme .username__descr {
+    color: white;
+}
+
 .username__descr {
     font-size: 12px;
     font-weight: 400;
@@ -174,11 +209,22 @@
     font-size: 16px;
 }
 
-.stories__top h1:nth-child(2) {
-    color: rgba(133, 161, 255, 1);
+.stories__top h1:nth-child(1) {
+    color: #242424;
 }
 
+.dark-theme .stories__top h1:nth-child(1) {
+    color: white;
+}
 
+.stories__top h1:nth-child(2) {
+    color: #4F5BFF;
+    cursor: not-allowed;
+}
+
+.dark-theme .stories__top h1:nth-child(2) {
+    color: rgba(133, 161, 255, 1);;
+}
 
 .profile__story {
     width: 56px;
@@ -207,9 +253,13 @@
     align-items: center;
     flex: 0 0 150px;
     height: 220px;
-    border: 0.5px solid rgba(211, 211, 211, 0.329);
+    border: 0.5px solid rgba(28, 28, 28, 0.329);
     border-radius: 4px;
     margin-right: 12px;
+}
+
+.dark-theme .stories__bottom {
+    border: 0.5px solid rgba(211, 211, 211, 0.329);
 }
 
 .top--section {
@@ -226,12 +276,21 @@
     justify-content: center;
     width: 100%;
     padding: 12px 0;
+    border-top: 0.5px solid rgba(28, 28, 28, 0.329);
+}
+
+.dark-theme .bottom__section {
     border-top: 0.5px solid rgba(211, 211, 211, 0.329);
 }
 
 .bottom__section h1 {
     font-size: 14px;
-    color: rgba(133, 161, 255, 1);
+    color: #4F5BFF;
+    cursor: not-allowed;
+}
+
+.dark-theme .bottom__section h1 {
+    color: rgba(133, 161, 255, 1);;
 }
 
 
@@ -255,7 +314,11 @@
     }
 
     .home-middle .footer {
-    display: block;
+    display: flex;
+}
+
+.home {
+    margin-bottom: 8px;
 }
 
     .home-middle {

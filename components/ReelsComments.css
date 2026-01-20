@@ -16,11 +16,32 @@
     display: flex;
 }
 
+.faceIcon {
+    color: white;
+}
+
+
 .comment,
 .comment__top {
     display: flex;
     flex-direction: column;
     align-items: start;
+}
+
+.comments__top h1 {
+    color: #242424;
+}
+
+.dark-theme .comments__top h1 {
+    color: white;
+}
+
+.comment__icon {
+    color: #242424;
+}
+
+.dark-theme .comment__icon {
+    color: white;
 }
 
 .comment__icon {
@@ -29,6 +50,19 @@
 
 .comment__top h1 {
     font-size: 14px;
+    color: #242424;
+}
+
+.dark-theme .comment__top h1 {
+    color: white;
+}
+
+.comment__bottom h1 {
+    color: #242424;
+}
+
+.dark-theme .comment__bottom h1 {
+    color: white;
 }
 
 .comment__content {

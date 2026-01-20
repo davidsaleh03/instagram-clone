@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Footer.css"
 
-const Footer = ({classTop, classTwo}) => {
+const Footer = ({classTop, classTwo, sideWidth}) => {
   return (
-    <div className={`footer ${classTop} ${classTwo}`}>
-        <ul className='footer__list'>
+    <div className={`footer ${classTop} ${classTwo} ${sideWidth}`}>
+        <ul className={`footer__list ${sideWidth}`}>
             <li className="footer__link">Meta</li>
             <li className="footer__link">About</li>
             <li className="footer__link">Blog</li>

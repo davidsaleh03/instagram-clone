@@ -54,6 +54,11 @@
     border-radius: 50%;
     overflow: hidden;
     margin-top: 6px;
+    border: 0.7px solid rgb(56, 56, 56);
+}
+
+.dark-theme .profile__pic--1 {
+    border: 0.7px solid rgb(221, 218, 218);
 }
 
 .profile__img--1 {
@@ -63,20 +68,46 @@
 
 .top__bottom {
     font-size: 12px;
+    color: #242424;
+}
+
+.dark-theme .top__bottom {
+    color: white;
+}
+
+.icon-1 {
+    color: #242424;
+}
+
+.dark-theme .icon-1 {
+    color: white;
 }
 
 .post__username {
     font-size: 16px;
     margin-right: 4px;
     font-weight: 600;
+    color: #242424;
+}
+
+.dark-theme .post__username {
+    color: white;
 }
 
 .follow__btn {
     margin-left: 4px;
+    color: #4F5BFF;
+}
+
+.dark-theme .follow__btn {
     color: rgba(133, 161, 255, 1)
 }
 
 .post__time {
+    color: rgb(96, 95, 95);
+}
+
+.dark-theme .post__time {
     color: lightgrey;
 }
 
@@ -89,6 +120,11 @@
 
 .post__icon {
     font-size: 24px;
+    color: #242424;
+}
+
+.dark-theme .post__icon {
+    color: white;
 }
 
 .bottom__top {
@@ -108,6 +144,12 @@
 .lower__likes {
     font-weight: bold;
     font-size: 14px;
+    color: #242424;
+}
+
+.dark-theme .username__lower,
+.dark-theme .lower__likes {
+    color: white;
 }
 
 .icon-left:not(:last-child) {
@@ -121,4 +163,9 @@
 
 .lower__comments {
     font-size: 14px;
+    color: #242424;
+}
+
+.dark-theme .lower__comments {
+    color: white;
 }

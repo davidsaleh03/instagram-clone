@@ -12,6 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Reccomended.css'
 import image from '../assets/healthy__post.jpg'
 import CommentsModal from "./CommentsModal";
+import { Link } from "react-router-dom";
 
 const Reccomended = ({onOpenComments}) => {
   
@@ -22,19 +23,23 @@ const Reccomended = ({onOpenComments}) => {
             homeuser.posts.map((post, index) => {
                 return <div className="post" key={index}>
         <div className="post__top">
+          <Link to={`/profile/${post.username}`}>
           <figure className="profile__pic--1">
             <img src={post.image2} alt="" className="profile__img--1" />
           </figure>
+          </Link>
           <div className="top__description">
             <div className="top__top">
                 <div className="top__left--container">
                 <div className="top__left">
+              <Link to={`/profile/${post.username}`}>
               <div className="post__username">{post.username}</div>
+              </Link>    
               <div className="post__time">• 2d •</div>
-              <div className="follow__btn">Follow</div>
+              <div className="follow__btn cursor-no">Follow</div>
                 </div>
                 <div className="top__right">
-                    <FontAwesomeIcon className="post__icon icon-1" icon={faEllipsis} />
+                    <FontAwesomeIcon className="post__icon icon-1 cursor-no" icon={faEllipsis} />
                 </div>
                 </div>
             <div className="top__bottom">Suggested For You</div>
@@ -47,12 +52,12 @@ const Reccomended = ({onOpenComments}) => {
         <div className="post__bottom">
           <div className="bottom__top">
             <div className="bottom-left">
-              <FontAwesomeIcon className="post__icon icon-left" icon={faHeart} />
+              <FontAwesomeIcon className="post__icon icon-left cursor-no" icon={faHeart} />
               <FontAwesomeIcon className="post__icon icon-left cursor-option" onClick={() => onOpenComments(post)} icon={faComment} />
-              <FontAwesomeIcon className="post__icon icon-left" icon={faPaperPlane} />
+              <FontAwesomeIcon className="post__icon icon-left cursor-no" icon={faPaperPlane} />
             </div>
             <div className="bottom-right">
-              <FontAwesomeIcon className="post__icon" icon={faBookmark} />
+              <FontAwesomeIcon className="post__icon cursor-no" icon={faBookmark} />
             </div>
           </div>
           <div className="bottom__lower">

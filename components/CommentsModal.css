@@ -2,9 +2,13 @@
     display: flex;
     height: 70vh;
     width: 700px;
-    background-color: #2b2b2b;
+    background-color: #ffffff;
     border-radius: 8px;
     overflow: hidden;
+}
+
+.dark-theme .comments__area--2 {
+    background-color: #2b2b2b;
 }
 
 .modal__overlay {
@@ -17,6 +21,11 @@
   z-index: 9999;
 
 }
+
+.faceIcon {
+    color: white !important;
+}
+
 
 .comments__area--left {
     display: flex;
@@ -46,6 +55,16 @@
     display: flex;
 }
 
+.comments__username--follow h1:first-child,
+.comments__username--follow h1:nth-child(2) {
+    color: #242424;
+}
+
+.dark-theme .comments__username--follow h1:first-child,
+.dark-theme .comments__username--follow h1:nth-child(2) {
+    color: white;
+}
+
 .comments__area--top {
     position: relative;
     height: 50px;
@@ -55,15 +74,6 @@
     justify-content: start;
     position: relative;
     padding: 8px 4px;
-}
-.comments__area--top::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 2px;
-    opacity: 50%;
-    bottom: 0;
-    border-bottom: 1px solid white;
 }
 
 .comments__area--top h1 {
@@ -95,6 +105,20 @@
     border-radius: 50%;
     overflow: hidden;
     margin-right: 12px;
+    border: 0.7px solid rgb(56, 56, 56);
+}
+
+.figure__profile--comments1 {
+    border: 0.7px solid rgb(56, 56, 56);
+    border-radius: 50%;
+}
+
+.dark-theme .figure__profile--comments1 {
+    border: 0.7px solid rgb(221, 218, 218);
+}
+
+.dark-theme .comments__top--profile {
+    border: 0.7px solid rgb(221, 218, 218);
 }
 
 .comments__top--profileimg {
@@ -124,6 +148,22 @@
 
 .comments1__username {
     font-size: 14px;
+}
+
+.comments1__username,
+.comments1__caption,
+.reply-1__section h1,
+.view__more-1,
+.comments__actual--icon {
+    color: #242424;
+}
+
+.dark-theme .comments1__username,
+.dark-theme .comments1__caption,
+.dark-theme .reply-1__section h1,
+.dark-theme .view__more-1,
+.dark-theme .comments__actual--icon {
+    color: white;
 }
 
 .reply-1__section {
@@ -164,13 +204,18 @@
 .new-one {
     width: 335px !important;
     margin-top: 8px !important;
-    
+    cursor: not-allowed;
 }
 
 .closeIcon {
     position: absolute;
     top: 16px;
     right: 12px;
+    color: #242424;
+}
+
+.dark-theme .closeIcon {
+    color: white;
 }
 
 .more-two {
@@ -209,15 +254,6 @@
         margin-bottom: 1px;
         position: relative;
     }
-    .comments__area--left::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 2px;
-    opacity: 50%;
-    bottom: -2px;
-    border-bottom: 1px solid white;
-}
     .comments__area--middle1 {
         max-height: 170px;
     }
@@ -231,10 +267,6 @@
         width: 400px;
         height: 400px;
 
-    }
-    .comments__area--top::after {
-        width: 130%;
-        left: 0;
     }
     .comment__area--figure2 {
         width: 230px;

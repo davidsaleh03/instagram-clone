@@ -4,22 +4,19 @@
     color: white;
 }
 
-* {
-    /* color: white; */
-}
 
 .contrast-icon {
     position: absolute;
     top: 20px;
     right: 20px;
     font-size: 28px;
-    filter: invert(1);
+    color: #242424;
     cursor: pointer;
     z-index: 9999;
 }
 
 .dark-theme .contrast-icon {
-    filter: invert(0);
+    color: white;
 }
 
 .login__container {

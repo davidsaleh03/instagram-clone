@@ -8,6 +8,14 @@
     justify-content: center;
 }
 
+.user__post--icon {
+    color: white;
+}
+
+.user__post--div h1 {
+    color: white;
+}
+
 .explore__section--posts {
     display: flex;
     flex-wrap: wrap;

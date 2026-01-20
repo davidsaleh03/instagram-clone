@@ -15,6 +15,7 @@ import {faEllipsis} from '@fortawesome/free-solid-svg-icons'
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
 import ReelsComments from "../../components/ReelsComments";
 import profileImg from "../../assets/profile.png";
+import { Link } from "react-router-dom";
 
 const Reels = () => {
   const [selectedReel, setSelectedReel] = useState(null)
@@ -45,6 +46,7 @@ const Reels = () => {
               </figure>
               <div className="reel__description">
                 <div className="description__top">
+                  <Link to={`/profile/${reel.username}`}>
                   <figure className="reel__figure--prof">
                     <img
                       src={reel.image}
@@ -52,7 +54,10 @@ const Reels = () => {
                       className="reel__figure--pic"
                     />
                   </figure>
+                  </Link>
+                  <Link to={`/profile/${reel.username}`}>
                   <h1 className="top-h1-margin">{reel.username}</h1>
+                  </Link>
                   <h1>•</h1>
                   <h1>Follow</h1>
                 </div>
@@ -70,18 +75,20 @@ const Reels = () => {
               </div>
               <div className="reel__side">
                 <div className="top__side--reel">
-                <FontAwesomeIcon className="reel__icon" icon={faHeart} />
+                <FontAwesomeIcon className="reel__icon cursor-no" icon={faHeart} />
                 <h1>14</h1>
                 <FontAwesomeIcon className="reel__icon cursor-option" onClick={() => openComments(reel)} icon={faComment} />
                 <h1>5</h1>
-                <FontAwesomeIcon className="reel__icon" icon={faPaperPlane} />
-                <FontAwesomeIcon className="reel__icon" icon={faBookmark} />
+                <FontAwesomeIcon className="reel__icon cursor-no" icon={faPaperPlane} />
+                <FontAwesomeIcon className="reel__icon cursor-no" icon={faBookmark} />
                 </div>
                 <>
-                <FontAwesomeIcon className="reel__icon" icon={faEllipsis} />
+                <FontAwesomeIcon className="reel__icon cursor-no" icon={faEllipsis} />
+                <Link to={`/profile/${reel.username}`}>
                 <figure className="side__profile">
                     <img src={reel.image} alt="" className="side__profile--img" />
                 </figure>
+                </Link>
                 </>
               </div>
               {

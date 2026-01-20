@@ -49,7 +49,7 @@ const ReelsComments = ({ reel, close }) => {
                         <img src={profileImg} alt="" className="add__img" />
                     </figure>
                     <h1>Add a comment...</h1>
-                    <FontAwesomeIcon icon={faFaceGrinBeam} />
+                    <FontAwesomeIcon className='faceIcon' icon={faFaceGrinBeam} />
                 </div>
     </>
   );

@@ -11,6 +11,14 @@ font-family: "Montserrat", sans-serif;
 
 .App {
   display: flex;
+  background: linear-gradient(
+  180deg,
+  #ffffff 0%,
+  #fafafa 100%
+);
+}
+
+.dark-theme .App {
   background: radial-gradient(
     circle at center,
     #1a1c22 0%,
@@ -40,7 +48,6 @@ body::-webkit-scrollbar {
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 .cursor-option {

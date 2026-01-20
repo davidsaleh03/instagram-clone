@@ -54,12 +54,12 @@ const CommentsModal = ({ post, onClose }) => {
                 <h1 className="comments1__caption">{comment.text}</h1>
                 <div className="reply-1__section">
                   <h1>30 likes</h1>
-                  <h1>Reply</h1>
+                  <h1 className='cursor-no'>Reply</h1>
                 </div>
-                <h1 className="view__more-1">View All Replies</h1>
+                <h1 className="view__more-1 cursor-no">View All Replies</h1>
               </div>
             </div>
-            <FontAwesomeIcon className='comments__actual--icon' icon="fa-regular fa-heart" />
+            <FontAwesomeIcon className='comments__actual--icon cursor-no' icon="fa-regular fa-heart" />
             </div>
           );
         })}
@@ -69,7 +69,7 @@ const CommentsModal = ({ post, onClose }) => {
                         <img src={profileImg} alt="" className="add__img" />
                     </figure>
                     <h1 className='more-two'>Add a comment...</h1>
-                    <FontAwesomeIcon icon={faFaceGrinBeam} />
+                    <FontAwesomeIcon className='faceIcon' icon={faFaceGrinBeam} />
                 </div>
       </div>
     </div>

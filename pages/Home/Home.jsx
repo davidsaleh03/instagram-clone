@@ -93,7 +93,7 @@ useEffect(() => {
             <Reccomended onOpenComments={openComments} onCloseComments={closeComments}/>
           </div>
         </div>
-        <Footer classTop='profileFooter'/>
+        <Footer classTop='profileFooter' sideWidth='sideWidth'/>
       </div>
       <div className="home-right">
         <div className="home__account">

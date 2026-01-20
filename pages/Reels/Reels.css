@@ -41,6 +41,10 @@
 }
 
 .reels__content h2 {
+    color: #242424;
+}
+
+.dark-theme .reels__content h2 {
     color: white;
 }
 
@@ -70,6 +74,9 @@
     align-items: center;
     margin-bottom: 12px;
 }
+.description__top h1 {
+ color: white;
+}
 
 .description__top h1 {
     font-size: 16px;
@@ -86,6 +93,7 @@
     border-radius: 6px;
     padding: 4px 6px;
     font-weight: 600;
+    cursor: not-allowed;
 }
 
 
@@ -97,6 +105,7 @@
     font-size: 14px;
     font-weight: 300;
     margin-left: 4px;
+    color: white;
 }
 
 .description__bottom {
@@ -112,6 +121,7 @@
 .description__bottom h1 {
     font-size: 14px;
     font-weight: 400;
+    color: white;
 }
 
 
@@ -126,6 +136,7 @@
 .description__icon {
     margin-right: 4px;
     font-size: 12px;
+    color: white;
 }
 
 .reel__side {
@@ -141,6 +152,11 @@
 .reel__icon {
     font-size: 22px;
     margin-bottom: 28px;
+    color: #242424;
+}
+
+.dark-theme .reel__icon {
+    color: white;
 }
 
 .reel__icon:nth-child(1),
@@ -154,12 +170,18 @@
 
 .reel__comments {
     position: absolute;
-    background-color: #2b2b2b;
+    background-color: #ffffff;
+    border: 1px solid #b5b4b4;
     right: -16px;
     border-radius: 12px;
     width: 300px;
     height: 400px;
     padding: 18px 26px;
+}
+
+.dark-theme .reel__comments {
+    background-color: #2b2b2b;
+    border: none;
 }
 
 .side__profile {
@@ -184,6 +206,11 @@
 .top__side--reel h1{
     font-size: 14px;
     margin-bottom: 22px;
+    color: #242424;
+}
+
+.dark-theme .top__side--reel h1 {
+    color: white;
 }
 
 .comment__top {
@@ -235,15 +262,29 @@
     align-items: center;
     padding: 4px 4px;
     margin-top: 12px;
-    border: 1px solid white;
+    border: 1px solid #242424;
     border-radius: 18px;
+    background-color: #808182;
+    cursor: not-allowed;
+}
+
+.dark-theme .comment__bottom--one {
     background-color: #2b2f36;
+    border: 1px solid white;
+}
+
+.faceIcon {
+    color: white;
 }
 
 .comment__bottom--one h1 {
     margin-right: 48px;
     font-size: 14px;
     font-weight: 300;
+    color: white;
+}
+
+.dark-theme .comment__bottom--one h1 {
     color: grey;
 }
 

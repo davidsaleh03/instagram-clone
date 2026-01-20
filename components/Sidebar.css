@@ -9,7 +9,7 @@
   overflow: hidden;
   z-index: 100;
   margin-right: 260px;
-  border-right: 0.09px solid rgba(255, 255, 255, 0.397);
+  border-right: 0.09px solid rgba(73, 73, 73, 0.397);
   background: linear-gradient(
   180deg,
   #ffffff 0%,
@@ -88,7 +88,8 @@
 }
 
 .dark-theme .insta__logo {
-  filter: invert(1); 
+  color: white; 
+  filter: invert(1);
 }
 
 .side__icon {

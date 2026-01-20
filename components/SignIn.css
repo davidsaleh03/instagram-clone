@@ -7,8 +7,9 @@ form {
 
 input {
     width: 250px;
-    border: 1px solid rgb(97, 97, 97);
-    background-color: grey;
+    border: 1px solid rgb(131, 131, 131);
+    background-color: rgb(184, 183, 183);
+    color: white;
     border-radius: 4px;
     padding: 10px 8px;
     margin-bottom: 8px;
@@ -16,6 +17,7 @@ input {
 
 .dark-theme input {
     border: 1px solid rgb(177, 177, 177);
+    background-color: grey;
 }
 
 input::placeholder {
@@ -43,7 +45,7 @@ button {
 }
 
 .dark-theme .more__text {
-    color: #242424;
+    color: white;
 }
 
 .more__text::before,
@@ -79,6 +81,7 @@ button {
     margin-right: 8px;
     color: #257cee;
 }
+
 
 .forgot {
     margin-bottom: 72px;
