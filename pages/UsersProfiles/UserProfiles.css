@@ -134,18 +134,26 @@
   overflow: hidden;
   z-index: 100;
   border-right: 0.09px solid rgba(255, 255, 255, 0.397);
-  background: radial-gradient(
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+  padding-left: 32px;
+  padding-right: 36%;
+}
+.dark-theme .top__small--bar {
+    background: radial-gradient(
     circle at center,
     #1a1c22 0%,
     #12141a 45%,
     #0f1115 70%,
     #0b0d10 100%
   );
-  padding-left: 32px;
-  padding-right: 36%;
 }
 .faAngleLeft {
     font-size: 28px;
+    color: #242424;
+}
+
+.dark-theme .faAngleLeft {
+    color: white;
 }
 .faAngleLeft-margin {
     /* margin-right: 32%; */
@@ -160,6 +168,11 @@
   font-size: 18px;
   white-space: nowrap;
   z-index: 2;
+  color: #242424;
+}
+
+.dark-theme .top__title {
+    color: white;
 }
 }
 

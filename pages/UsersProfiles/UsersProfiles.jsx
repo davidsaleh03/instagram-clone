@@ -13,7 +13,7 @@ import {
 import { faBookmark } from "@fortawesome/free-regular-svg-icons";
 import Footer from '../../components/Footer';
 import homeuser from '../../assets/home-user.js'
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import UserPosts from '../../components/UserPosts.jsx';
 import CommentsModal from '../../components/CommentsModal.jsx';
 import ReelModal from '../../components/ReelModal.jsx';
@@ -21,6 +21,7 @@ import ReelModal from '../../components/ReelModal.jsx';
 const UsersProfiles = () => {
     const [activeIcon, setActiveIcon] = useState("posts");
     const {username} = useParams()
+    const navigate = useNavigate()
 
     const userPost = homeuser.posts.filter(
     (post) => post.username === username
@@ -68,9 +69,7 @@ const UsersProfiles = () => {
   return (
     <div className="profile__page">
       <div className="top__small--bar">
-        <Link to='/' className="faAngleLeft-margin">
-        <FontAwesomeIcon className="faAngleLeft" icon={faAngleLeft} />
-        </Link>
+        <FontAwesomeIcon className="faAngleLeft faAngleLeft-margin" onClick={()=>{navigate(-1)}} icon={faAngleLeft} />
         <h1 className="top__title">{user.username}</h1>
       </div>
       <div className="profile__page--one">

@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="App">
-        {!hideTopbar && <Topbar />}
+        {!hideTopbar && <Topbar colorChange={toggleContrast}/>}
         {!hideSidebar && <Sidebar colorChange={toggleContrast}/>}
         <Routes>
           <Route path='/' element={<Home />} className="home-index" />

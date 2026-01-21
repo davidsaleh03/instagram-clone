@@ -20,13 +20,13 @@ import React from "react";
 import { logout } from "../firebase";
 import { Link } from "react-router-dom";
 
-const Topbar = () => {
+const Topbar = ({colorChange}) => {
   return (
     <div className="sidebar-top">
       <figure className="sidebar-top__figure">
         <img src={logoImg} alt="" className="sidebar-top__img" />
-        <FontAwesomeIcon className='sidebar-top__icons' onClick={logout} icon={faArrowRightFromBracket} />
-        <FontAwesomeIcon className='sidebar-top__icons' icon={faCircleHalfStroke} />
+        <FontAwesomeIcon className='sidebar-top__icons cursor-option' onClick={logout} icon={faArrowRightFromBracket} />
+        <FontAwesomeIcon className='sidebar-top__icons cursor-option' onClick={colorChange} icon={faCircleHalfStroke} />
       </figure>
       <div className="sidebar-top__search">
         <FontAwesomeIcon className='sidebar-top__icon' icon={faMagnifyingGlass} />

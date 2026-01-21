@@ -65,8 +65,8 @@ function openLikes() {
               <h1>Messages</h1>
             </li>
           </Link>
-          <li className="side__link">
-            <FontAwesomeIcon icon={faHeart} onClick={openLikes} className="side__icon" />
+          <li className="side__link" onClick={openLikes}>
+            <FontAwesomeIcon icon={faHeart} className="side__icon" />
             <h1>Notifications</h1>
           </li>
           <li className="side__link no-cursor">
@@ -83,16 +83,15 @@ function openLikes() {
           </Link>
         </ul>
         <ul className="side__bottom">
-          <Link to="/profile/daily_nutrition">
-            <li className="bottom__link">
-              <FontAwesomeIcon icon={faArrowRightFromBracket} onClick={logout} className="side__icon" />
+          <Link to="/profile/daily_nutrition" >
+            <li className="bottom__link" onClick={logout}>
+              <FontAwesomeIcon icon={faArrowRightFromBracket} className="side__icon" />
               <h1>Logout</h1>
             </li>
           </Link>
-          <li className="bottom__link cursor-option">
+          <li className="bottom__link cursor-option" onClick={colorChange}>
             <FontAwesomeIcon
               icon={faCircleHalfStroke}
-              onClick={colorChange}
               className="side__icon"
             />
             <h1>Display</h1>

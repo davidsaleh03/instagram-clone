@@ -17,11 +17,12 @@ import YourPosts from "../../components/YourPosts";
 import YourSaved from "../../components/YourSaved";
 import YourTagged from "../../components/YourTagged";
 import Footer from "../../components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Profile = () => {
   const [activeIcon, setActiveIcon] = useState("posts");
   const [profileData, setProfileData] = useState(null);
+  const navigate = useNavigate()
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, async (user) => {
@@ -43,9 +44,8 @@ const Profile = () => {
   return (
     <div className="profile__page">
       <div className="top__small--bar">
-        <Link to="/" className="faAngleLeft-margin">
-          <FontAwesomeIcon className="faAngleLeft" icon={faAngleLeft} />
-        </Link>
+        
+          <FontAwesomeIcon className="faAngleLeft faAngleLeft-margin" onClick={()=>{navigate(-1)}} icon={faAngleLeft} />
         <h1 className="top__title">{profileData?.name || "Username"}</h1>
       </div>
       <div className="profile__page--one your__page--one">
