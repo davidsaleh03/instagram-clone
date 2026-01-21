@@ -4,13 +4,23 @@
     left: 260px;
     height: 100vh;
     width: 360px;
-    border-right: 0.09px solid rgba(255, 255, 255, 0.2);
     z-index: 99;
     padding: 0 22px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     animation: slideIn 0.3s ease forwards;
+    border-right: 0.09px solid rgba(73, 73, 73, 0.397);
+    background: linear-gradient(
+  180deg,
+  #ffffff 0%,
+  #fafafa 100%
+);
+  padding-bottom: 44px;
+  z-index: 90000;
+}
+
+.dark-theme .NotificationSideBar {
     background: radial-gradient(
     circle at center,
     #1a1c22 0%,
@@ -18,7 +28,7 @@
     #0f1115 70%,
     #0b0d10 100%
   );
-  padding-bottom: 44px;
+  border-right: 0.09px solid rgba(255, 255, 255, 0.2);
 }
 
 .notify__side--top {
@@ -30,6 +40,19 @@
 
 .notify__side--top h1 {
     font-size: 24px;
+    color: #242424;
+}
+
+.dark-theme .notify__side--top h1 {
+    color: white;
+}
+
+.faX {
+    color: #242424;
+}
+
+.dark-theme .faX {
+    color: white;
 }
 
 .notify__suggested--accounts {
@@ -45,18 +68,26 @@
 
 .notify-icon {
     font-size: 64px;
-    
+    color: #242424;
+}
+
+.dark-theme .notify-icon {
+    color: white;
 }
 
 .middle__notify {
     width: 100px;
     height: 100px;
-    border: 1px solid white;
+    border: 1px solid #242424;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 12px;
+}
+
+.dark-theme .middle__notify {
+    border: 1px solid white;
 }
 
 .middle__notify--modal {
@@ -69,6 +100,11 @@
 .middle__notify--modal h1 {
     text-align: center;
     font-size: 16px;
+    color: #242424;
+}
+
+.dark-theme .middle__notify--modal h1 {
+    color: white;
 }
 
 .middle__notify--modal h1:nth-child(2) {
@@ -78,8 +114,12 @@
 
 .middle__notify--modal h1:nth-child(3) {
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.607);
+    color: rgba(51, 51, 51, 0.607);
     width: 275px;
+}
+
+.dark-theme .middle__notify--modal h1:nth-child(3) {
+    color: rgba(255, 255, 255, 0.607);
 }
 
 .notify__h1 {
@@ -87,15 +127,24 @@
     font-size: 18px;
     position: relative;
     margin-bottom: 36px;
+    color: #242424;
+}
+
+.dark-theme .notify__h1 {
+    color: white;
 }
 
 .notify__h1::after {
     position: absolute;
     content: " ";
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(37, 36, 36, 0.2);
     bottom: -12px;
-    left: -30px;
-    width: 140%;
+    left: -40px;
+    width: 150%;
+}
+
+.dark-theme .notify__h1::after {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @keyframes slideIn {

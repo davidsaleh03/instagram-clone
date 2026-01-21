@@ -81,18 +81,18 @@ const UsersProfiles = () => {
           <div className="profile__top--right profile__top--margin">
             <div className="right__top">
               <h1>{user.username}</h1>
-              <h1 className="right__top--btn right__one cursor-option">Follow</h1>
+              <h1 className="right__top--btn right__one cursor-no">Follow</h1>
               <h1 className="right__top--btn cursor-no">Message</h1>
-              <FontAwesomeIcon className='ellipsis__small' icon={faEllipsis} />
+              <FontAwesomeIcon className='ellipsis__small cursor-no' icon={faEllipsis} />
             </div>
             <div className="profile__middle">
               <h1>
                 <span className="bold">7</span>posts
               </h1>
-              <h1>
+              <h1 className='cursor-no'>
                 <span className="bold cursor-no">{user.followers}</span>followers
               </h1>
-              <h1>
+              <h1 className='cursor-no'>
                 <span className="bold cursor-no">{user.following}</span>following
               </h1>
             </div>
@@ -108,11 +108,11 @@ const UsersProfiles = () => {
                 <h1 className="h1-bold">7</h1>
                 <h1>posts</h1>
               </div>
-              <div className='profile__middle-h1'>
+              <div className='profile__middle-h1 cursor-no'>
                 <h1 className="h1-bold">{user.followers}</h1>
                 <h1>followers</h1>
               </div>
-              <div className='profile__middle-h1'>
+              <div className='profile__middle-h1 cursor-no'>
                 <h1 className="h1-bold">{user.following}</h1>
                 <h1>following</h1>
               </div>  

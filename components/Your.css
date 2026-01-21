@@ -8,7 +8,7 @@
 .camera__figure {
     width: 62px;
     height: 62px;
-    border: 1px solid white;
+    border: 1px solid #242424;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -16,18 +16,37 @@
     margin-bottom: 22px;
 }
 
+.dark-theme .camera__figure {
+    border: 1px solid white;
+}
+
 .camera__icon {
     font-size: 36px;
+    color: #242424;
+}
+
+.dark-theme .camera__icon {
+    color: white;
 }
 
 .YourPosts p{
     width: 250px;
     text-align: center;
     margin-bottom: 24px;
+    color: rgba(51, 51, 51, 0.607);
+}
+
+.dark-theme .YourPosts p {
+    color: rgba(255, 255, 255, 0.607);
 }
 
 .YourPosts h1 {
     margin-bottom: 14px;
+    color: #242424;
+}
+
+.dark-theme .YourPosts h1 {
+    color: white;
 }
 
 .Yourbtn {

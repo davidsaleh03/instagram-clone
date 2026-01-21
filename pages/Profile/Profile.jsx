@@ -68,10 +68,10 @@ const Profile = () => {
               <h1>
                 <span className="bold">0</span>posts
               </h1>
-              <h1>
+              <h1 className='cursor-no'>
                 <span className="bold cursor-no">0</span>followers
               </h1>
-              <h1>
+              <h1 className='cursor-no'>
                 <span className="bold cursor-no">0</span>following
               </h1>
             </div>
@@ -86,11 +86,11 @@ const Profile = () => {
                 <h1 className="your-bold">0</h1>
                 <h1>posts</h1>
               </div>
-              <div className='your__middle-h1'>
+              <div className='your__middle-h1 cursor-no'>
                 <h1 className="your-bold">0</h1>
                 <h1>followers</h1>
               </div>
-              <div className='your__middle-h1'>
+              <div className='your__middle-h1 cursor-no'>
                 <h1 className="your-bold">0</h1>
                 <h1>following</h1>
               </div>  

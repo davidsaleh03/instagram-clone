@@ -11,7 +11,7 @@ const NotificationSideBar = ({closeModal}) => {
     <div className='NotificationSideBar'>
         <div className="notify__side--top">
         <h1>Notifications</h1>
-        <FontAwesomeIcon className='cursor-option' onClick={closeModal} icon={faX} />
+        <FontAwesomeIcon className='faX cursor-option' onClick={closeModal} icon={faX} />
         </div>
         <div className="middle__notify--modal">
             <figure className="middle__notify">

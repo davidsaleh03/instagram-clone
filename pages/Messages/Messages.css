@@ -13,10 +13,14 @@
 }
 
 .messages__left--side {
-    border-right: 0.1px solid rgba(255, 255, 255, 0.284);
+    border-right: 0.1px solid rgba(63, 63, 63, 0.284);
     width: 30%;
     justify-content: center;
     align-items: start;
+}
+
+.dark-theme .messages__left--side {
+    border-right: 0.1px solid rgba(255, 255, 255, 0.284);
 }
 
 .messages__right--side {
@@ -36,11 +40,20 @@ align-items: center;
 .messages__left--middle p {
     text-align: center;
     width: 85%;
+    color: rgba(70, 69, 69, 0.607);
+}
+
+.dark-theme .messages__left--middle p {
     color: rgba(255, 255, 255, 0.607);
 }
 
 .PaperPlane {
     font-size: 36px;
+    color: #242424;
+}
+
+.dark-theme .PaperPlane{
+    color: white;
 }
 
 .send__figure {
@@ -49,9 +62,13 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid #242424;
     border-radius: 50%;
     margin-bottom: 8px;
+}
+
+.dark-theme .send__figure {
+    border: 1px solid white;
 }
 
 .messages__right--middle {
@@ -63,16 +80,30 @@ align-items: center;
 
 .messages__right--middle h1 {
     margin-bottom: 12px;
+    color: #242424;
+}
+
+.dark-theme .messages__right--middle h1 {
+    color: white;
 }
 
 .messages__right--middle p{
     margin-bottom: 8px;
+    color: rgba(70, 69, 69, 0.607);
+}
+
+.dark-theme .messages__right--middle p {
     color: rgba(255, 255, 255, 0.607);
 }
 
-.pentosquare {
+.pentosquare{
     font-size: 24px;
     margin-bottom: 24px;
+    color: #242424;
+}
+
+.dark-theme .pentosquare {
+    color: white;
 }
 
 

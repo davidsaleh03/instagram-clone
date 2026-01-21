@@ -137,6 +137,7 @@
 
 .profile__commentsimg--1 {
     width: 100%;
+    cursor: not-allowed;
 }
 
 .comments1__caption {
@@ -148,6 +149,7 @@
 
 .comments1__username {
     font-size: 14px;
+    cursor: not-allowed;
 }
 
 .comments1__username,
@@ -156,6 +158,10 @@
 .view__more-1,
 .comments__actual--icon {
     color: #242424;
+}
+
+.comments__actual--icon {
+    cursor: not-allowed;
 }
 
 .dark-theme .comments1__username,
@@ -180,6 +186,10 @@
     font-weight: 400;
 }
 
+.reply-1__section h1:nth-child(2) {
+    cursor: not-allowed;
+}
+
 .comments__actual-1 {
     display: flex;
     justify-content: center;
@@ -193,6 +203,7 @@
 
 .view__more-1 {
     font-size: 14px;
+    cursor: not-allowed;
 }
 
 .comments__actual-2 {

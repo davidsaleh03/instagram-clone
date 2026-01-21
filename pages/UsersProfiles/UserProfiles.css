@@ -5,12 +5,18 @@
 
 .right__one {
   background: linear-gradient(90deg, #4f5bff 0%, #6a5cff 100%) !important;
+  color: white !important;
 }
 
 .profile__bottom h2 {
   font-size: 12px;
   font-weight: 300;
   margin-top: 12px;
+  color: #242424;
+}
+
+.dark-theme .profile__bottom h2 {
+    color: white;
 }
 
 .profile__top--margin {
@@ -25,6 +31,14 @@
 
 .profile__middle--small {
   display: none;
+}
+
+.ellipsis__small {
+    color: #242424;
+}
+
+.dark-theme .ellipsis__small {
+    color: white;
 }
 
 .top__small--bar {
@@ -66,8 +80,12 @@
     left: 0;
     /* height: 1px; */
     width: 100%;
-    border-top: 0.05px solid white;
+    border-bottom: 1px solid rgba(37, 36, 36, 0.2);
     opacity: 0.5;
+  }
+
+  .dark-theme .profile__middle--small:before {
+    border-bottom: 1px solid white;
   }
 
   .profile__middle-h1 {
@@ -84,8 +102,13 @@
 
   .h1-bold {
     font-weight: 400;
+    color: #242424 !important;
+  }
+
+  .dark-theme .h1-bold {
     color: white !important;
   }
+
 
   .profile__middle--small h1 {
     font-size: 20px;
