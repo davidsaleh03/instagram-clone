@@ -18,11 +18,22 @@ import YourSaved from "../../components/YourSaved";
 import YourTagged from "../../components/YourTagged";
 import Footer from "../../components/Footer";
 import { Link, useNavigate } from "react-router-dom";
+import LoadingProfile from "../../components/LoadingProfile";
+
 
 const Profile = () => {
   const [activeIcon, setActiveIcon] = useState("posts");
   const [profileData, setProfileData] = useState(null);
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate()
+
+  useEffect(() => {
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 500);
+  
+      return () => clearTimeout(timer);
+    }, []);
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, async (user) => {
@@ -41,6 +52,8 @@ const Profile = () => {
 
     return () => unsub();
   }, []);
+
+  if (loading) { return <LoadingProfile />; }
   return (
     <div className="profile__page">
       <div className="top__small--bar">

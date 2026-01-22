@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Messages.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+import LoadingMessages from '../../components/LoadingMessages';
 
 const Messages = () => {
+const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+          const timer = setTimeout(() => {
+            setLoading(false);
+          }, 800);
+          return () => clearTimeout(timer);
+        }, []);
+  if (loading) { return <LoadingMessages />; }
   return (
     <div className='messages'>
       <div className="messages__left--side">

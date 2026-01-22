@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Reels.css";
 import video from "../../assets/study.smart.mp4";
 import homeuser from "../../assets/home-user";
@@ -16,9 +16,18 @@ import { faMusic } from "@fortawesome/free-solid-svg-icons";
 import ReelsComments from "../../components/ReelsComments";
 import profileImg from "../../assets/profile.png";
 import { Link } from "react-router-dom";
+import LoadingReel from "../../components/LoadingReel";
 
 const Reels = () => {
   const [selectedReel, setSelectedReel] = useState(null)
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 800);
+      return () => clearTimeout(timer);
+    }, []);
 
   function openComments(reel) {
     setSelectedReel(reel);
@@ -27,6 +36,8 @@ const Reels = () => {
   function closeComments() {
     setSelectedReel(null);
   }
+
+  if (loading) { return <LoadingReel />; }
   
   return (
     <div className="reels">

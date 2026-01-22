@@ -1,0 +1,58 @@
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile-title {
+  width: 140px;
+  height: 18px;
+}
+
+.profile-name {
+  width: 120px;
+  height: 18px;
+  margin-right: 12px;
+}
+
+.profile-btn {
+  width: 90px;
+  height: 32px;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.profile-stat {
+  width: 70px;
+  height: 16px;
+  margin-right: 32px;
+}
+
+.profile-username {
+  width: 100px;
+  height: 14px;
+}
+
+.profile-tab {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.loading-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 6px !important;
+  margin-top: 24px !important;
+}
+
+.profile-post {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+}
+
+.profile-stat-mobile {
+  width: 50px;
+  height: 20px;
+}

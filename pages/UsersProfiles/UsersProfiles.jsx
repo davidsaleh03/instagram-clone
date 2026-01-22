@@ -17,11 +17,20 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import UserPosts from '../../components/UserPosts.jsx';
 import CommentsModal from '../../components/CommentsModal.jsx';
 import ReelModal from '../../components/ReelModal.jsx';
+import LoadingProfile from '../../components/LoadingProfile.jsx';
 
 const UsersProfiles = () => {
     const [activeIcon, setActiveIcon] = useState("posts");
     const {username} = useParams()
     const navigate = useNavigate()
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+          const timer = setTimeout(() => {
+            setLoading(false);
+          }, 800);
+          return () => clearTimeout(timer);
+        }, []);
 
     const userPost = homeuser.posts.filter(
     (post) => post.username === username
@@ -65,6 +74,8 @@ const UsersProfiles = () => {
       document.body.style.overflow = "auto";
     };
   }, [isModalOpen, isReelOpen]);
+
+  if (loading) { return <LoadingProfile />; }
 
   return (
     <div className="profile__page">

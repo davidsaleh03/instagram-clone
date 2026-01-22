@@ -16,12 +16,21 @@ import {
 import Footer from "../../components/Footer";
 import CommentsModal from "../../components/CommentsModal";
 import ReelModal from "../../components/ReelModal";
+import LoadingExplore from "../../components/LoadingExplore";
 
 const Explore = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedPost, setSelectedPost] = useState(null);
   const [isReelOpen, setIsReelOpen] = useState(false);
-  const [selectedReel, setSelectedReel] = useState(null);    
+  const [selectedReel, setSelectedReel] = useState(null);   
+  const [loading, setLoading] = useState(true); 
+
+  useEffect(() => {
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 800);
+      return () => clearTimeout(timer);
+    }, []);
   
   function openComments(post) {
     setSelectedPost(post);
@@ -54,6 +63,8 @@ const Explore = () => {
       document.body.style.overflow = "auto";
     };
   }, [isModalOpen, isReelOpen]);
+
+  if (loading) { return <LoadingExplore />; }
 
   return (
     <div className="Explore">
