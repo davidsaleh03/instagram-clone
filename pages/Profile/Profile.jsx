@@ -30,7 +30,7 @@ const Profile = () => {
   useEffect(() => {
       const timer = setTimeout(() => {
         setLoading(false);
-      }, 500);
+      }, 300);
   
       return () => clearTimeout(timer);
     }, []);

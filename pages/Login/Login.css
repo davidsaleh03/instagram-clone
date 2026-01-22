@@ -4,6 +4,25 @@
     color: white;
 }
 
+.login-page {
+    position: relative;
+}
+
+.login__note {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #4F5BFF 0%, #6A5CFF 100%);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.login__note h1 {
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
 
 .contrast-icon {
     position: absolute;

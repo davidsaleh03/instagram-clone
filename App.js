@@ -11,6 +11,8 @@ import Messages from './pages/Messages/Messages';
 import Profile from './pages/Profile/Profile';
 import UsersProfiles from './pages/UsersProfiles/UsersProfiles';
 import Topbar from './components/Topbar';
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 
 function App() {
@@ -51,6 +53,7 @@ function App() {
     <div className="App">
         {!hideTopbar && <Topbar colorChange={toggleContrast}/>}
         {!hideSidebar && <Sidebar colorChange={toggleContrast}/>}
+        <ToastContainer theme='light'/>
         <Routes>
           <Route path='/' element={<Home />} className="home-index" />
           <Route path='/login' element={<Login colorChange={toggleContrast}/>}/>

@@ -14,6 +14,14 @@ const Login = ({colorChange}) => {
 
   return (
     <div className='login-page'>
+      <div className="login__note">
+        <h1>YOU CAN CREATE YOUR OWN ACCOUNT OR USE
+          <br />
+          EMAIL: test456@test.com
+          <br />
+          PASSWORD: test123456789
+        </h1>
+      </div>
       <FontAwesomeIcon className='contrast-icon' icon={faCircleHalfStroke} onClick={colorChange} />
     <div className="login">
       <div className="login__container">

@@ -305,6 +305,14 @@
         margin: 20px 0 120px 0;
     }
 
+    .top__side--reel h1 {
+        color: white;
+    }
+
+    .reel__icon {
+        color: white;
+    }
+
 }
 
 @media (max-width: 767px) {

@@ -25,7 +25,7 @@ const Reels = () => {
   useEffect(() => {
       const timer = setTimeout(() => {
         setLoading(false);
-      }, 800);
+      }, 300);
       return () => clearTimeout(timer);
     }, []);
 
