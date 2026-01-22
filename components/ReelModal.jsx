@@ -71,7 +71,7 @@ const ReelModal = ({reels, onClose}) => {
                         <img src={profileImg} alt="" className="add__img" />
                     </figure>
                     <h1 className='more-two'>Add a comment...</h1>
-                    <FontAwesomeIcon icon={faFaceGrinBeam} />
+                    <FontAwesomeIcon className='faceIcon' icon={faFaceGrinBeam} />
                 </div>
       </div>
     </div>
